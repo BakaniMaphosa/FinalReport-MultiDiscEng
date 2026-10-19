@@ -1,0 +1,32 @@
+INSTITUTIONAL (EDUCATION) (L08_B01)
+
+Data Provider: Synavision
+Climate Zone: Cfb
+
+Building info:
+
+§1 Year Opened = 2015
+
+§2 Number of floors = 4
+
+§3 Size
+- Gross total floor area = 11500 sqm 
+- Gross total heated area = 11500 sqm
+
+§4 Ventilation systems = 0
+- Used for space heating = N/A
+- Used for space heating = N/A
+
+§5 Heating & cooling system
+- Direct electrical heating = NO
+- District heating = NO
+- District cooling = NO
+- Heat pump = YES
+- Geothermal storage = YES
+- Agrothermics = YES
+
+§6 Tap water heating
+
+§7 Solar PV = YES
+
+NOTE:

@@ -1,0 +1,65 @@
+PUBLIC BUILDING (L05_B01)
+
+HM01 (Main meter, heat load)
+|
+| 	EM01 (Building's energy use)
+|	|
+|	|-ES01 (cooling machine: electronic data processing) [TD]
+| 	|-ES02 (cooling machine: hall) [TD]
+|  	|-ES09 (Building part 1: total)
+|  	|	|-ES03 (Building part 1: 1st floor)
+|  	|	|-ES04 (Building part 1: 2nd floor)
+|  	|	|-ES05 (Building part 1: 3rd floor)
+|  	|	|-ES06 (Building part 1: 4th floor)
+|  	|	|-ES07 (Building part 1: 5th floor)
+|  	|	|-ES08 (Building part 1: ground floor)
+|  	|
+|  	|-ES10 (Building part 2: total)
+|  	|	|-ES11 (Building part 2: ground floor)
+|  	|	|-ES12 (Building part 2: ground floor: hall/foyer)
+|  	|	|-ES13 (Building part 2: ground floor: staircase)
+|  	|
+|  	|-ES14 (Outdoor)
+|  	|-ES15 (Kitchen)
+|  	|-ES16 (Sockets 1st floor: general current)
+|  	|-ES17 (Sockets 2nd floor: general current)
+|  	|-ES18 (Sockets 3rd floor: general current)
+|  	|-ES19 (Sockets 4th floor: general current)
+|  	|-ES20 (Sockets 5th floor: general current)
+|  	|-ES21 (Sockets 1st floor: electronic data processing)
+|  	|-ES22 (Sockets 2nd floor: electronic data processing)
+|  	|-ES23 (Sockets 3rd floor: electronic data processing)
+|  	|-ES24 (Sockets 4th floor: electronic data processing)
+|  	|-ES25 (Sockets 5th floor: electronic data processing)
+|  	|-ES26 (Elevator 1)
+|  	|-ES27 (Elevator 2)
+|  	|-ES28 (Lighting 1st floor: general current)
+|  	|-ES29 (Lighting 2nd floor: general current)
+|  	|-ES30 (Lighting 3rd floor: general current)
+|  	|-ES31 (Lighting 4th floor: general current)
+|  	|-ES32 (Lighting 5th floor: general current)
+|  	|-ES33 (Lighting 1st floor: corridor)
+|  	|-ES34 (Lighting 2nd floor: corridor)
+|  	|-ES35 (Lighting 3rd floor: corridor)
+|  	|-ES36 (Lighting 4th floor: corridor)
+|  	|-ES37 (Lighting 5th floor: corridor)
+|  	|-ES38 (Server)
+|  	|-ES39 (Ventilation) [TD]
+|
+|-HS01 (Static heating (radiator) office north) [TD]
+|-HS02 (Static heating (radiator) office east) [TD]
+|-HS03 (Static heating (radiator) office south) [TD]
+|-HS04 (Static heating (radiator) office west) [TD]
+|-HS05 (Earth probes heating performance) [TD]
+
+ 
+|-CS01 (Concrete core (floor cooling) activation) [TD]
+|-CS02 (Concrete core (floor cooling) activation pump) [TD]
+|-CS03 (Earth probe pump) [TD]
+|-CS04 (Recirculating air cooler: general) [TD]
+|-CS05 (Recirculating air cooler: electronic data processing) [TD]
+|-CS06 (Cooling machine performance) [TD]
+|-CS07 (Earth probes cooling performance)
+
+NOTE:
+[TD] = temperature dependent load.

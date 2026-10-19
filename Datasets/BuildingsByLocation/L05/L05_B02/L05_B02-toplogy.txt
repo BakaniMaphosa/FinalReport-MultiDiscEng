@@ -1,0 +1,23 @@
+PUBLIC SCHOOL (L05_B02)
+
+EM01 (Electricity purchase)
+|
+|-------ES05 (Photovoltaic feed)
+|	|
+|	|-ES06 (kitchen 100% PV)
+|
+|-ES01 (Electrical load Sports hall)
+|-ES02 (Heat pump 1) [TD]
+|-ES03 (Heat pump 2) [TD]
+|-ES04 (Electrical load Aula)
+|-ES07 (Water (boiler) supply 1)
+|-ES08 (Water (boiler) supply 2)
+|-ES09 (Floor cooling and heating) (Part of heat delivered from HP:s)
+
+|-HS01 (Heating Sports hall)
+
+|-GS01 (Backup gas boiler)
+
+NOTE:
+[TD] = temperature dependent load.
+Both HP01 and HP02 deliver heat to accumulator tank, then used to heat sports hall.

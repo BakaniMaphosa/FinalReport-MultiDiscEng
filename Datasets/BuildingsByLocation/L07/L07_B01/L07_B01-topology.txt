@@ -1,0 +1,14 @@
+GROCERY STORE (L07_B01)
+
+EM01 (Electricity main meter)
+|
+|- ES01 (Fresh produce)
+|- ES02 (Lights, sockets, POS)
+|- ES04 (Energy group meter)
+|    |- ES05 (Chiller)
+|    |- ES06 (Rooms and disks)
+|    |- ES07 (Dry cooler)
+|- ES03 (Air handling unit) [TD]
+
+NOTE:
+[TD] = temperature dependent load.

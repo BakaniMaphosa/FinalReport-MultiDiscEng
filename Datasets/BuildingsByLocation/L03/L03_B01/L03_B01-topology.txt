@@ -1,0 +1,18 @@
+KINDER GARDEN (L03_B01)
+
+EM01 (Main meter, Building's energy use)
+|
+|- EM02 (Electricity use)
+|	|
+|	|- ES01
+|	|- ES02
+|	|- ES03
+|	|- ES04
+|				+---> HS01 (Temperature sensor)
+|- GM01 (Gas boiler) [TD] --+	+---> HS02 (Temperature sensor)
+|- GM02 (Gas boiler) [TD] --+---+---> HS03 (Temperature sensor)
+|- GM03 (Gas boiler) [TD] --+	+---> HS04 (Temperature sensor)
+				+---> HS05 (Temperature sensor)
+
+NOTE:
+[TD] = temperature dependent loads.

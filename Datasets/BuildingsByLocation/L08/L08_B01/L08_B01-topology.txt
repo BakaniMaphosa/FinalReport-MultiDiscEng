@@ -1,0 +1,34 @@
+HIGH SCHOOL (L08_B01)
+
+|<-EM01 (Main meter, Grid import) 
+|
+|->EM02 (Main meter, Surplus Feed in) 
+|	
+|	
+|- ES07 (Photovoltaic production)
+|
+|- ES08 (Agrothermics performance) (solar collector)
+|	|
+|	|-ES01 (Agrothermics entry (short term heat storage))
+| 	|-ES02 (Agrothermics withdrawal (short term heat storage))
+|
+|- ES09 (Geothermal performance)	
+|	|
+|	|-ES03 (Geothermal probe input (long term heat storage)) 
+|	|-ES04 (Geothermal probe extraction (long term heat storage)) 
+|
+|- ES05 (Heat pump 1) [TD] -----> HS01 (Heat pump 1 delivered heat)
+|	^	     	
+|	+---HS02 (Geothermal probe extraction by Heat pump 1)
+|
+|- ES06 (Heat pump 2) [TD] -----> HS03 (Heat pump 2 delivered heat)
+	^
+	+---HS04 (Geothermal probe extraction by Heat pump 2)
+
+
+|- GM01 (Backup gas boiler) [TD]
+
+NOTES:
+[TD] = temperature dependent loads.
+ES09 dependent on HS02 and HS04.
+Heat pump 1 and 2 extracts heat from Geothermal probe.

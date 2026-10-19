@@ -1,0 +1,34 @@
+INSTITUTIONAL (EDUCATION) (L03_B01)
+
+Data Provider: ReMoni
+Climate Zone: Cfb
+
+Building info:
+
+§1 Year Opened = 2013
+
+§2 Number of floors = 4
+
+§3 Number of floors = 1
+- Gross total floor area = 1013 sqm 
+- Gross total heated area = 1013 sqm
+
+§4 Ventilation systems = 2
+- Used for space heating = YES
+- Used for space cooling = NO
+
+§5 Heating & cooling system
+- Direct electrical heating = NO
+- District heating = NO
+- District cooling = NO
+- Heat pump = NO
+- Gas boiler = YES
+
+§6 Tap water heating
+- Gas boiler = YES
+- District heating = YES
+
+§7 Solar PV = NO
+
+NOTE:
+EM01 is virtual main meter, aggregating electricity use and heat from boiler.

@@ -1,0 +1,16 @@
+RETAIL (L06_B01)
+
+EM01 (Main net meter, Building's energy use/surplus)
+|
+|-EM02 (PV, Production)
+| 
+|-ES01 (Heat pump) [TD] --------+----->	HM01 (Heat pump + boiler delivered energy) [TD]
+|			  	|  	|
+|-ES02 (Electric boiler) [TD] --+ 	|---> HS01 (Air handling unit heating coils) (Unmeasured) [TD]
+					|
+					|---> HS02 (Snow melting system)
+
+NOTE:
+HS01 = HM01 - HS02
+
+[TD] = temperature dependent load.
