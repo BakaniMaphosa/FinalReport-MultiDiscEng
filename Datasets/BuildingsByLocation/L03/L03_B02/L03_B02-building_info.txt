@@ -1,7 +1,0 @@
-UNKOWN (L03_B02)
-
-Data Provider: ReMoni
-Climate Zone: Cfb
-
-Building info:
-Information not provided by partner.

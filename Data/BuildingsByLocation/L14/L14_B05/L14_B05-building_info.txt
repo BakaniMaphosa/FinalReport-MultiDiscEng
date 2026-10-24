@@ -1,0 +1,32 @@
+PUBLIC BUILDING (KINDERGARTEN) (L14_B05)
+
+Data Provider: SINTEF
+Climate Zone: Dfb
+
+Building info:
+
+§1 Year Opened = 1990 (renovated in 2013)
+
+§2 Number of floors = missing
+
+§3 Size 
+- Gross total floor area = 988 sqm
+- Gross total heated area = 988 sqm
+
+§4 Ventilation systems = 1
+- Used for space heating = YES
+- Used for space cooling = NO
+
+§5 Heating & cooling system
+- Direct electrical heating = NO
+- District heating = YES
+- District cooling = NO
+- Heat pump = NO
+
+§6 Tap water heating
+- Electric heating accumulation tank = YES
+- Natural gas = NO
+
+§7 Solar PV = NO
+
+NOTE:

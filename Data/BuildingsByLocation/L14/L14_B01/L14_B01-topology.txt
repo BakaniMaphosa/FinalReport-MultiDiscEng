@@ -1,0 +1,11 @@
+PUBLIC BUILDING, School built in 1914 and renovated in 2001 (L14_B01)
+
+EM01 (Main meter - Electricity Import)
+|
+|-- ES01 (HP) [TD] -> HS01 (Heat HP) ->	+ -> HM01 (Heat tot)*
+|					^
+|-- ES02 (Boiler) [TD] -----------------|
+
+*HM01 = HS01 + Heat from boiler
+NOTE:
+[TD] = temperature dependent loads.

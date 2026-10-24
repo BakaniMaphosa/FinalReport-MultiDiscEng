@@ -1,0 +1,21 @@
+PUBLIC BUILDING, School (L14_B03)
+
+EM01 (Combined heat and electricity)
+|	
+|-------EM02 (Main meter - Electricity import)
+|	|
+|	|--ES06 (Electricity Pump)
+|	|--ES05 (Electricity Ventilation Fans)
+|	|--ES04 (Electricity Hot Water Heater) [TD]
+|	|--ES02 (Electricity Comfort Cooling) [TD]
+|	|
+|	|--ES01 (Electricity Lighting)
+|	|--ES03 (Electricity Outdoor lighting)
+|
+|-------HM01 (District heating import) [TD]
+	|	
+	|-- HS01 (Heat Ventilation) [TD]
+	|-- HS02 (Room Heating) [TD]
+
+NOTE:
+[TD] = temperature dependent loads.

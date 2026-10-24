@@ -1,0 +1,670 @@
+ENERGY READINGS INSPECTION - READ ONLY
+Data root: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation
+Report destination: /Users/bakani/Desktop/E.Consumption_predictionModel/Data_cleaning/energy_readings_report.txt
+Scope: ten selected channels in building 1h folders; weather folders and symbolic links skipped.
+Source files are never modified, converted, filtered, or merged. No outlier removal is performed.
+Numbers and differences retain the stated unit. A difference is a numerical comparison, not approved consumption.
+Data rows are sorted in memory by timezone-aware UTC timestamp. Naive/invalid timestamps are not assigned a timezone.
+Duplicate timestamps are reported; every comparison touching any occurrence is excluded, even if duplicate values agree.
+Missing/non-numeric rows remain barriers. No comparison bridges them. Unplaceable timestamp rows also block pairs spanning them in source-row order.
+All-interval comparisons include gaps and are explicitly separate from exactly-one-hour statistics.
+Documented basis: the selected L14 channels are treated as hourly energy, as specified in the inspection requirements.
+Other interpretations are numerical suggestions only. Pt/ePt names and units do not establish interval versus counter semantics.
+Heuristic suggestions require >=24 one-hour pairs plus direction AND scale evidence; no monotonicity threshold approves conversion.
+Counter-like suggestion: >=10 increases, <=2% decreases, and both median absolute level and span >=20 median positive one-hour steps.
+Hourly-like suggestion: >=10% increases and >=10% decreases, absolute signed/absolute total change <=0.25, and span <=100 median absolute one-hour steps.
+These are exploratory heuristics, not proofs. Counter resets/corrections and rising/constant hourly runs are possible.
+All non-L14 suggestions still require manual metadata review; constant/all-zero/insufficient or indecisive series require manual review.
+Percentages use the eligible pair count printed for their comparison group; comparisons use exact numeric equality, without tolerance filtering.
+
+====================================================================================================
+Building: L03_B01 | Channel: EM02.Pt
+File path: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L03/L03_B01/1h/adrenalin.1h.L03.B01.EM02.Pt.csv
+Exact column headers: ["timestamp [UTC]", "value Pt [Consumed active energy (kWh)]"]
+Stated unit: kWh
+Total data rows (excluding header; blank/malformed records counted): 8736
+Valid finite numeric readings: 8736
+Missing/non-numeric/non-finite or malformed readings: 0
+Valid UTC timestamps: 8736; missing/invalid/naive timestamps: 0
+Rows with an unexpected column count: 0
+First timestamp (chronological UTC): 2022-01-01T12:00:00Z
+Last timestamp (chronological UTC): 2022-12-31T11:00:00Z
+Reading statistics (all finite numeric readings, original stated unit): minimum=0.0, median=3050.0, maximum=11220.0
+First 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 1: 2022-01-01T12:00:00Z | '2540.0'
+  row 2: 2022-01-01T13:00:00Z | '3020.0'
+  row 3: 2022-01-01T14:00:00Z | '2970.0'
+  row 4: 2022-01-01T15:00:00Z | '3030.0'
+  row 5: 2022-01-01T16:00:00Z | '2940.0'
+  row 6: 2022-01-01T17:00:00Z | '2940.0'
+  row 7: 2022-01-01T18:00:00Z | '2900.0'
+  row 8: 2022-01-01T19:00:00Z | '2880.0'
+  row 9: 2022-01-01T20:00:00Z | '2960.0'
+  row 10: 2022-01-01T21:00:00Z | '2900.0'
+Last 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 8727: 2022-12-31T02:00:00Z | '2950.0'
+  row 8728: 2022-12-31T03:00:00Z | '3130.0'
+  row 8729: 2022-12-31T04:00:00Z | '3090.0'
+  row 8730: 2022-12-31T05:00:00Z | '3150.0'
+  row 8731: 2022-12-31T06:00:00Z | '3260.0'
+  row 8732: 2022-12-31T07:00:00Z | '3180.0'
+  row 8733: 2022-12-31T08:00:00Z | '3260.0'
+  row 8734: 2022-12-31T09:00:00Z | '3200.0'
+  row 8735: 2022-12-31T10:00:00Z | '3170.0'
+  row 8736: 2022-12-31T11:00:00Z | '2770.0'
+Duplicate timestamps: 0 distinct timestamp(s), 0 affected rows, 0 extra occurrences
+Consecutive chronological timestamp pairs: 8735
+Timestamp pairs NOT exactly one hour apart (including zero-duration duplicates): 0
+Pairs excluded because either timestamp is duplicated: 0
+Further pairs excluded for missing/non-numeric readings: 0
+Further pairs excluded across unplaceable source rows: 0
+All valid consecutive comparisons, including gaps (not hourly energy): 8735 eligible pair(s)
+  Increases: 4305 (49.2845%)
+  Decreases: 4285 (49.0555%)
+  Unchanged: 145 (1.6600%)
+  Consecutive differences: minimum=-5660.0, median=0.0, maximum=9500.0
+Exactly-one-hour consecutive comparisons ONLY: 8735 eligible pair(s)
+  Increases: 4305 (49.2845%)
+  Decreases: 4285 (49.0555%)
+  Unchanged: 145 (1.6600%)
+  Consecutive differences: minimum=-5660.0, median=0.0, maximum=9500.0
+Decrease examples (up to 10 eligible chronological pairs; elapsed time explicitly shown):
+  2022-01-01T13:00:00Z | '3020.0' -> 2022-01-01T14:00:00Z | '2970.0'; difference=-50.0; elapsed=1:00:00
+  2022-01-01T15:00:00Z | '3030.0' -> 2022-01-01T16:00:00Z | '2940.0'; difference=-90.0; elapsed=1:00:00
+  2022-01-01T17:00:00Z | '2940.0' -> 2022-01-01T18:00:00Z | '2900.0'; difference=-40.0; elapsed=1:00:00
+  2022-01-01T18:00:00Z | '2900.0' -> 2022-01-01T19:00:00Z | '2880.0'; difference=-20.0; elapsed=1:00:00
+  2022-01-01T20:00:00Z | '2960.0' -> 2022-01-01T21:00:00Z | '2900.0'; difference=-60.0; elapsed=1:00:00
+  2022-01-01T22:00:00Z | '2960.0' -> 2022-01-01T23:00:00Z | '2830.0'; difference=-130.0; elapsed=1:00:00
+  2022-01-02T00:00:00Z | '3780.0' -> 2022-01-02T01:00:00Z | '3120.0'; difference=-660.0; elapsed=1:00:00
+  2022-01-02T01:00:00Z | '3120.0' -> 2022-01-02T02:00:00Z | '2900.0'; difference=-220.0; elapsed=1:00:00
+  2022-01-02T03:00:00Z | '3050.0' -> 2022-01-02T04:00:00Z | '3020.0'; difference=-30.0; elapsed=1:00:00
+  2022-01-02T05:00:00Z | '3070.0' -> 2022-01-02T06:00:00Z | '2960.0'; difference=-110.0; elapsed=1:00:00
+Suggested interpretation: suggested hourly energy
+Evidence: Numerical suggestion only; no interval/counter documentation assumed. 4305 increases and 4285 decreases in 8735 one-hour pairs; absolute signed change / total absolute change = 0.000; span / median absolute step = 48.78. Bounded, bidirectional variation suggests interval values; metadata/manual review is still required.
+Requires review: yes - manual review required
+
+====================================================================================================
+Building: L06_B01 | Channel: EM01.Pt
+File path: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L06/L06_B01/1h/adrenalin.1h.L06.B01.EM01.Pt.csv
+Exact column headers: ["timestamp [UTC]", "value Pt [Consumed active energy (kWh)]"]
+Stated unit: kWh
+Total data rows (excluding header; blank/malformed records counted): 18821
+Valid finite numeric readings: 18821
+Missing/non-numeric/non-finite or malformed readings: 0
+Valid UTC timestamps: 18821; missing/invalid/naive timestamps: 0
+Rows with an unexpected column count: 0
+First timestamp (chronological UTC): 2020-10-02T09:00:00Z
+Last timestamp (chronological UTC): 2022-12-31T23:00:00Z
+Reading statistics (all finite numeric readings, original stated unit): minimum=-229107.203125, median=464852.8125, maximum=1490305.875
+First 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 1: 2020-10-02T09:00:00Z | '0.0'
+  row 2: 2020-10-12T12:00:00Z | '4499.5'
+  row 3: 2020-10-12T13:00:00Z | '4505.7001953125'
+  row 4: 2020-10-12T14:00:00Z | '4511.7001953125'
+  row 5: 2020-10-12T15:00:00Z | '4518.2998046875'
+  row 6: 2020-10-12T16:00:00Z | '4524.89990234375'
+  row 7: 2020-10-12T17:00:00Z | '4532.2001953125'
+  row 8: 2020-10-12T18:00:00Z | '4539.7998046875'
+  row 9: 2020-10-12T19:00:00Z | '4547.2998046875'
+  row 10: 2020-10-12T20:00:00Z | '4550.2998046875'
+Last 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 18812: 2022-12-31T14:00:00Z | '1489863.875'
+  row 18813: 2022-12-31T15:00:00Z | '603746.125'
+  row 18814: 2022-12-31T16:00:00Z | '1490063.375'
+  row 18815: 2022-12-31T17:00:00Z | '1490137.0'
+  row 18816: 2022-12-31T18:00:00Z | '1490172.125'
+  row 18817: 2022-12-31T19:00:00Z | '1490203.0'
+  row 18818: 2022-12-31T20:00:00Z | '1490229.5'
+  row 18819: 2022-12-31T21:00:00Z | '1490254.375'
+  row 18820: 2022-12-31T22:00:00Z | '604033.5'
+  row 18821: 2022-12-31T23:00:00Z | '1490305.875'
+Duplicate timestamps: 0 distinct timestamp(s), 0 affected rows, 0 extra occurrences
+Consecutive chronological timestamp pairs: 18820
+Timestamp pairs NOT exactly one hour apart (including zero-duration duplicates): 2
+Pairs excluded because either timestamp is duplicated: 0
+Further pairs excluded for missing/non-numeric readings: 0
+Further pairs excluded across unplaceable source rows: 0
+All valid consecutive comparisons, including gaps (not hourly energy): 18820 eligible pair(s)
+  Increases: 14399 (76.5090%)
+  Decreases: 4418 (23.4750%)
+  Unchanged: 3 (0.0159%)
+  Consecutive differences: minimum=-1157144.25, median=71.125, maximum=886409.125
+Exactly-one-hour consecutive comparisons ONLY: 18818 eligible pair(s)
+  Increases: 14397 (76.5065%)
+  Decreases: 4418 (23.4775%)
+  Unchanged: 3 (0.0159%)
+  Consecutive differences: minimum=-1157144.25, median=71.109375, maximum=886409.125
+Decrease examples (up to 10 eligible chronological pairs; elapsed time explicitly shown):
+  2020-10-15T19:00:00Z | '49039.6015625' -> 2020-10-15T20:00:00Z | '4906.7001953125'; difference=-44132.9013671875; elapsed=1:00:00
+  2020-10-18T09:00:00Z | '5148.2998046875' -> 2020-10-18T10:00:00Z | '5148.0'; difference=-0.2998046875; elapsed=1:00:00
+  2020-10-18T10:00:00Z | '5148.0' -> 2020-10-18T11:00:00Z | '5147.89990234375'; difference=-0.10009765625; elapsed=1:00:00
+  2020-10-18T11:00:00Z | '5147.89990234375' -> 2020-10-18T12:00:00Z | '5147.7001953125'; difference=-0.19970703125; elapsed=1:00:00
+  2020-10-18T12:00:00Z | '5147.7001953125' -> 2020-10-18T13:00:00Z | '5147.5'; difference=-0.2001953125; elapsed=1:00:00
+  2020-10-18T15:00:00Z | '5149.2998046875' -> 2020-10-18T16:00:00Z | '5149.0'; difference=-0.2998046875; elapsed=1:00:00
+  2020-11-08T10:00:00Z | '1209057.625' -> 2020-11-08T11:00:00Z | '1208948.75'; difference=-108.875; elapsed=1:00:00
+  2020-11-12T12:00:00Z | '1285843.25' -> 2020-11-12T13:00:00Z | '128699.0'; difference=-1157144.25; elapsed=1:00:00
+  2020-11-15T10:00:00Z | '133799.40625' -> 2020-11-15T11:00:00Z | '133794.296875'; difference=-5.109375; elapsed=1:00:00
+  2020-11-15T12:00:00Z | '133818.40625' -> 2020-11-15T13:00:00Z | '133818.0'; difference=-0.40625; elapsed=1:00:00
+Suggested interpretation: manual review required
+Evidence: Numerical suggestion only; no interval/counter documentation assumed. Direction, scale, and available one-hour comparisons do not give a decisive counter/hourly pattern.
+Requires review: yes - manual review required
+
+====================================================================================================
+Building: L06_B01 | Channel: EM01.ePt
+File path: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L06/L06_B01/1h/adrenalin.1h.L06.B01.EM01.ePt.csv
+Exact column headers: ["timestamp [UTC]", "value ePt [Active energy export (kWh)]"]
+Stated unit: kWh
+Total data rows (excluding header; blank/malformed records counted): 672
+Valid finite numeric readings: 672
+Missing/non-numeric/non-finite or malformed readings: 0
+Valid UTC timestamps: 672; missing/invalid/naive timestamps: 0
+Rows with an unexpected column count: 0
+First timestamp (chronological UTC): 2020-10-02T09:00:00Z
+Last timestamp (chronological UTC): 2022-10-16T13:00:00Z
+Reading statistics (all finite numeric readings, original stated unit): minimum=0.0, median=3394.300048828125, maximum=6816.60009765625
+First 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 1: 2020-10-02T09:00:00Z | '0.0'
+  row 2: 2020-10-12T12:00:00Z | '0.3000000119209289'
+  row 3: 2020-10-15T19:00:00Z | '3.299999952316284'
+  row 4: 2020-10-15T20:00:00Z | '0.3000000119209289'
+  row 5: 2020-10-18T10:00:00Z | '0.4000000059604645'
+  row 6: 2020-10-18T11:00:00Z | '0.5'
+  row 7: 2020-10-18T12:00:00Z | '0.800000011920929'
+  row 8: 2020-10-18T13:00:00Z | '1.0'
+  row 9: 2020-10-19T16:00:00Z | '155.1999969482422'
+  row 10: 2020-10-25T13:00:00Z | '158.39999389648438'
+Last 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 663: 2022-10-02T11:00:00Z | '6807.2001953125'
+  row 664: 2022-10-02T12:00:00Z | '6808.7998046875'
+  row 665: 2022-10-02T13:00:00Z | '6810.7001953125'
+  row 666: 2022-10-02T14:00:00Z | '6813.7998046875'
+  row 667: 2022-10-02T15:00:00Z | '6814.39990234375'
+  row 668: 2022-10-09T11:00:00Z | '6815.2001953125'
+  row 669: 2022-10-09T12:00:00Z | '6816.0'
+  row 670: 2022-10-16T11:00:00Z | '6816.2001953125'
+  row 671: 2022-10-16T12:00:00Z | '6816.5'
+  row 672: 2022-10-16T13:00:00Z | '6816.60009765625'
+Duplicate timestamps: 0 distinct timestamp(s), 0 affected rows, 0 extra occurrences
+Consecutive chronological timestamp pairs: 671
+Timestamp pairs NOT exactly one hour apart (including zero-duration duplicates): 110
+Pairs excluded because either timestamp is duplicated: 0
+Further pairs excluded for missing/non-numeric readings: 0
+Further pairs excluded across unplaceable source rows: 0
+All valid consecutive comparisons, including gaps (not hourly energy): 671 eligible pair(s)
+  Increases: 662 (98.6587%)
+  Decreases: 7 (1.0432%)
+  Unchanged: 2 (0.2981%)
+  Consecutive differences: minimum=-3432.800048828125, median=7.39990234375, maximum=3432.800048828125
+Exactly-one-hour consecutive comparisons ONLY: 561 eligible pair(s)
+  Increases: 557 (99.2870%)
+  Decreases: 2 (0.3565%)
+  Unchanged: 2 (0.3565%)
+  Consecutive differences: minimum=-3432.800048828125, median=10.5000000000000, maximum=3432.800048828125
+Decrease examples (up to 10 eligible chronological pairs; elapsed time explicitly shown):
+  2020-10-15T19:00:00Z | '3.299999952316284' -> 2020-10-15T20:00:00Z | '0.3000000119209289'; difference=-2.9999999403953551; elapsed=1:00:00
+  2020-10-25T13:00:00Z | '158.39999389648438' -> 2020-11-12T13:00:00Z | '15.800000190734863'; difference=-142.599993705749517; elapsed=18 days, 0:00:00
+  2020-11-12T13:00:00Z | '15.800000190734863' -> 2020-12-19T11:00:00Z | '0.0'; difference=-15.800000190734863; elapsed=36 days, 22:00:00
+  2020-12-19T14:00:00Z | '15.800000190734863' -> 2020-12-22T07:00:00Z | '0.0'; difference=-15.800000190734863; elapsed=2 days, 17:00:00
+  2020-12-22T08:00:00Z | '15.800000190734863' -> 2021-01-08T13:00:00Z | '0.0'; difference=-15.800000190734863; elapsed=17 days, 5:00:00
+  2021-01-08T14:00:00Z | '15.800000190734863' -> 2021-01-11T10:00:00Z | '0.0'; difference=-15.800000190734863; elapsed=2 days, 20:00:00
+  2021-11-26T11:00:00Z | '3432.800048828125' -> 2021-11-26T12:00:00Z | '0.0'; difference=-3432.800048828125; elapsed=1:00:00
+Suggested interpretation: suggested cumulative energy
+Evidence: Numerical suggestion only; no interval/counter documentation assumed. 557/561 one-hour increases, 2 decreases; median absolute reading / median positive step = 317.23, reading span / median positive step = 637.08. Counter-like levels and trajectory; decreases may be resets/corrections. Metadata/manual review is still required.
+Requires review: yes - manual review required
+
+====================================================================================================
+Building: L06_B01 | Channel: EM02.Pt
+File path: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L06/L06_B01/1h/adrenalin.1h.L06.B01.EM02.Pt.csv
+Exact column headers: ["timestamp [UTC]", "value Pt [Consumed active energy (kWh)]"]
+Stated unit: kWh
+Total data rows (excluding header; blank/malformed records counted): 8915
+Valid finite numeric readings: 8915
+Missing/non-numeric/non-finite or malformed readings: 0
+Valid UTC timestamps: 8915; missing/invalid/naive timestamps: 0
+Rows with an unexpected column count: 0
+First timestamp (chronological UTC): 2020-10-02T11:00:00Z
+Last timestamp (chronological UTC): 2022-12-31T12:00:00Z
+Reading statistics (all finite numeric readings, original stated unit): minimum=936.2000122070312, median=57039.0, maximum=1476657152.0
+First 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 1: 2020-10-02T11:00:00Z | '1476657152.0'
+  row 2: 2020-10-02T16:00:00Z | '936.2000122070312'
+  row 3: 2020-10-03T01:00:00Z | '936.2000122070312'
+  row 4: 2020-10-03T06:00:00Z | '937.2000122070312'
+  row 5: 2020-10-03T07:00:00Z | '943.5'
+  row 6: 2020-10-03T08:00:00Z | '953.4000244140624'
+  row 7: 2020-10-03T09:00:00Z | '956.9000244140624'
+  row 8: 2020-10-03T10:00:00Z | '962.5'
+  row 9: 2020-10-03T11:00:00Z | '977.4000244140624'
+  row 10: 2020-10-03T12:00:00Z | '990.7000122070312'
+Last 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 8906: 2022-12-28T12:00:00Z | '108175.0'
+  row 8907: 2022-12-28T14:00:00Z | '108176.0'
+  row 8908: 2022-12-29T02:00:00Z | '108176.0'
+  row 8909: 2022-12-29T10:00:00Z | '108177.0'
+  row 8910: 2022-12-29T11:00:00Z | '108178.0'
+  row 8911: 2022-12-30T02:00:00Z | '108178.0'
+  row 8912: 2022-12-30T10:00:00Z | '108179.0'
+  row 8913: 2022-12-31T10:00:00Z | '108181.0'
+  row 8914: 2022-12-31T11:00:00Z | '108183.0'
+  row 8915: 2022-12-31T12:00:00Z | '108185.0'
+Duplicate timestamps: 0 distinct timestamp(s), 0 affected rows, 0 extra occurrences
+Consecutive chronological timestamp pairs: 8914
+Timestamp pairs NOT exactly one hour apart (including zero-duration duplicates): 1686
+Pairs excluded because either timestamp is duplicated: 0
+Further pairs excluded for missing/non-numeric readings: 0
+Further pairs excluded across unplaceable source rows: 0
+All valid consecutive comparisons, including gaps (not hourly energy): 8914 eligible pair(s)
+  Increases: 8057 (90.3859%)
+  Decreases: 1 (0.0112%)
+  Unchanged: 856 (9.6029%)
+  Consecutive differences: minimum=-1476656215.7999877929688, median=7.0, maximum=51.0
+Exactly-one-hour consecutive comparisons ONLY: 7228 eligible pair(s)
+  Increases: 7225 (99.9585%)
+  Decreases: 0 (0.0000%)
+  Unchanged: 3 (0.0415%)
+  Consecutive differences: minimum=0.0, median=11.0, maximum=51.0
+Decrease examples (up to 10 eligible chronological pairs; elapsed time explicitly shown):
+  2020-10-02T11:00:00Z | '1476657152.0' -> 2020-10-02T16:00:00Z | '936.2000122070312'; difference=-1476656215.7999877929688; elapsed=5:00:00
+Suggested interpretation: suggested cumulative energy
+Evidence: Numerical suggestion only; no interval/counter documentation assumed. 7225/7228 one-hour increases, 0 decreases; median absolute reading / median positive step = 5185.36, reading span / median positive step = 134241474.16. Counter-like levels and trajectory; decreases may be resets/corrections. Metadata/manual review is still required.
+Requires review: yes - manual review required
+
+====================================================================================================
+Building: L07_B01 | Channel: EM01.Pt
+File path: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L07/L07_B01/1h/adrenalin.1h.L07.B01.EM01.Pt.csv
+Exact column headers: ["timestamp [UTC]", "value Pt [Consumed active energy (kWh)]"]
+Stated unit: kWh
+Total data rows (excluding header; blank/malformed records counted): 9545
+Valid finite numeric readings: 9545
+Missing/non-numeric/non-finite or malformed readings: 0
+Valid UTC timestamps: 9545; missing/invalid/naive timestamps: 0
+Rows with an unexpected column count: 0
+First timestamp (chronological UTC): 2021-11-29T06:00:00Z
+Last timestamp (chronological UTC): 2022-12-31T23:00:00Z
+Reading statistics (all finite numeric readings, original stated unit): minimum=21426.0, median=244799.0, maximum=488412.0
+First 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 1: 2021-11-29T06:00:00Z | '21426.0'
+  row 2: 2021-11-29T07:00:00Z | '21492.19921875'
+  row 3: 2021-11-29T08:00:00Z | '21551.69921875'
+  row 4: 2021-11-29T09:00:00Z | '21606.0'
+  row 5: 2021-11-29T10:00:00Z | '21660.69921875'
+  row 6: 2021-11-29T11:00:00Z | '21707.599609375'
+  row 7: 2021-11-29T12:00:00Z | '21764.80078125'
+  row 8: 2021-11-29T13:00:00Z | '21826.099609375'
+  row 9: 2021-11-29T14:00:00Z | '21882.19921875'
+  row 10: 2021-11-29T15:00:00Z | '21940.5'
+Last 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 9536: 2022-12-31T14:00:00Z | '488082.90625'
+  row 9537: 2022-12-31T15:00:00Z | '488120.90625'
+  row 9538: 2022-12-31T16:00:00Z | '488158.6875'
+  row 9539: 2022-12-31T17:00:00Z | '488201.0'
+  row 9540: 2022-12-31T18:00:00Z | '488239.8125'
+  row 9541: 2022-12-31T19:00:00Z | '488276.3125'
+  row 9542: 2022-12-31T20:00:00Z | '488310.09375'
+  row 9543: 2022-12-31T21:00:00Z | '488344.09375'
+  row 9544: 2022-12-31T22:00:00Z | '488378.09375'
+  row 9545: 2022-12-31T23:00:00Z | '488412.0'
+Duplicate timestamps: 0 distinct timestamp(s), 0 affected rows, 0 extra occurrences
+Consecutive chronological timestamp pairs: 9544
+Timestamp pairs NOT exactly one hour apart (including zero-duration duplicates): 1
+Pairs excluded because either timestamp is duplicated: 0
+Further pairs excluded for missing/non-numeric readings: 0
+Further pairs excluded across unplaceable source rows: 0
+All valid consecutive comparisons, including gaps (not hourly energy): 9544 eligible pair(s)
+  Increases: 9544 (100.0000%)
+  Decreases: 0 (0.0000%)
+  Unchanged: 0 (0.0000%)
+  Consecutive differences: minimum=26.09375, median=50.4013671875, maximum=91.0000
+Exactly-one-hour consecutive comparisons ONLY: 9543 eligible pair(s)
+  Increases: 9543 (100.0000%)
+  Decreases: 0 (0.0000%)
+  Unchanged: 0 (0.0000%)
+  Consecutive differences: minimum=26.09375, median=50.400390625, maximum=91.0000
+Decrease examples (up to 10 eligible chronological pairs; elapsed time explicitly shown):
+  None among eligible pairs.
+Suggested interpretation: suggested cumulative energy
+Evidence: Numerical suggestion only; no interval/counter documentation assumed. 9543/9543 one-hour increases, 0 decreases; median absolute reading / median positive step = 4857.09, reading span / median positive step = 9265.52. Counter-like levels and trajectory; decreases may be resets/corrections. Metadata/manual review is still required.
+Requires review: yes - manual review required
+
+====================================================================================================
+Building: L14_B01 | Channel: EM01.Pt
+File path: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/L14_B01/1h/adrenalin.1h.L14.B01.EM01.Pt.csv
+Exact column headers: ["timestamp [UTC]", "value Pt [Consumed active energy (kWh)]"]
+Stated unit: kWh
+Total data rows (excluding header; blank/malformed records counted): 36360
+Valid finite numeric readings: 36360
+Missing/non-numeric/non-finite or malformed readings: 0
+Valid UTC timestamps: 36360; missing/invalid/naive timestamps: 0
+Rows with an unexpected column count: 0
+First timestamp (chronological UTC): 2017-12-31T23:00:00Z
+Last timestamp (chronological UTC): 2022-03-09T22:00:00Z
+Reading statistics (all finite numeric readings, original stated unit): minimum=3.0, median=48.0, maximum=329.0
+First 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 1: 2017-12-31T23:00:00Z | '71.0'
+  row 2: 2018-01-01T00:00:00Z | '65.0'
+  row 3: 2018-01-01T01:00:00Z | '73.0'
+  row 4: 2018-01-01T02:00:00Z | '64.0'
+  row 5: 2018-01-01T03:00:00Z | '65.0'
+  row 6: 2018-01-01T04:00:00Z | '63.0'
+  row 7: 2018-01-01T05:00:00Z | '67.0'
+  row 8: 2018-01-01T06:00:00Z | '74.0'
+  row 9: 2018-01-01T07:00:00Z | '63.0'
+  row 10: 2018-01-01T08:00:00Z | '68.0'
+Last 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 36351: 2022-03-09T13:00:00Z | '142.0'
+  row 36352: 2022-03-09T14:00:00Z | '137.0'
+  row 36353: 2022-03-09T15:00:00Z | '136.0'
+  row 36354: 2022-03-09T16:00:00Z | '82.0'
+  row 36355: 2022-03-09T17:00:00Z | '74.0'
+  row 36356: 2022-03-09T18:00:00Z | '72.0'
+  row 36357: 2022-03-09T19:00:00Z | '64.0'
+  row 36358: 2022-03-09T20:00:00Z | '42.0'
+  row 36359: 2022-03-09T21:00:00Z | '49.0'
+  row 36360: 2022-03-09T22:00:00Z | '53.0'
+Duplicate timestamps: 0 distinct timestamp(s), 0 affected rows, 0 extra occurrences
+Consecutive chronological timestamp pairs: 36359
+Timestamp pairs NOT exactly one hour apart (including zero-duration duplicates): 12
+Pairs excluded because either timestamp is duplicated: 0
+Further pairs excluded for missing/non-numeric readings: 0
+Further pairs excluded across unplaceable source rows: 0
+All valid consecutive comparisons, including gaps (not hourly energy): 36359 eligible pair(s)
+  Increases: 15203 (41.8136%)
+  Decreases: 17650 (48.5437%)
+  Unchanged: 3506 (9.6427%)
+  Consecutive differences: minimum=-150.0, median=0.0, maximum=149.0
+Exactly-one-hour consecutive comparisons ONLY: 36347 eligible pair(s)
+  Increases: 15198 (41.8136%)
+  Decreases: 17644 (48.5432%)
+  Unchanged: 3505 (9.6432%)
+  Consecutive differences: minimum=-150.0, median=0.0, maximum=149.0
+Decrease examples (up to 10 eligible chronological pairs; elapsed time explicitly shown):
+  2017-12-31T23:00:00Z | '71.0' -> 2018-01-01T00:00:00Z | '65.0'; difference=-6.0; elapsed=1:00:00
+  2018-01-01T01:00:00Z | '73.0' -> 2018-01-01T02:00:00Z | '64.0'; difference=-9.0; elapsed=1:00:00
+  2018-01-01T03:00:00Z | '65.0' -> 2018-01-01T04:00:00Z | '63.0'; difference=-2.0; elapsed=1:00:00
+  2018-01-01T06:00:00Z | '74.0' -> 2018-01-01T07:00:00Z | '63.0'; difference=-11.0; elapsed=1:00:00
+  2018-01-01T08:00:00Z | '68.0' -> 2018-01-01T09:00:00Z | '63.0'; difference=-5.0; elapsed=1:00:00
+  2018-01-01T10:00:00Z | '66.0' -> 2018-01-01T11:00:00Z | '62.0'; difference=-4.0; elapsed=1:00:00
+  2018-01-01T13:00:00Z | '66.0' -> 2018-01-01T14:00:00Z | '58.0'; difference=-8.0; elapsed=1:00:00
+  2018-01-01T15:00:00Z | '68.0' -> 2018-01-01T16:00:00Z | '64.0'; difference=-4.0; elapsed=1:00:00
+  2018-01-01T17:00:00Z | '64.0' -> 2018-01-01T18:00:00Z | '63.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T18:00:00Z | '63.0' -> 2018-01-01T19:00:00Z | '60.0'; difference=-3.0; elapsed=1:00:00
+Suggested interpretation: documented hourly energy
+Evidence: Documented hourly energy (provided L14 interpretation). Nonnegative readings rise and fall over one-hour pairs; observed behaviour is consistent, not proof.
+Requires review: no (documented interpretation and observed behaviour are consistent)
+
+====================================================================================================
+Building: L14_B02 | Channel: EM01.Pt
+File path: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/L14_B02/1h/adrenalin.1h.L14.B02.EM01.Pt.csv
+Exact column headers: ["timestamp [UTC]", "value Pt [Consumed active energy (kWh)]"]
+Stated unit: kWh
+Total data rows (excluding header; blank/malformed records counted): 36336
+Valid finite numeric readings: 36336
+Missing/non-numeric/non-finite or malformed readings: 0
+Valid UTC timestamps: 36336; missing/invalid/naive timestamps: 0
+Rows with an unexpected column count: 0
+First timestamp (chronological UTC): 2017-12-31T23:00:00Z
+Last timestamp (chronological UTC): 2022-02-22T22:00:00Z
+Reading statistics (all finite numeric readings, original stated unit): minimum=9.0, median=34.0, maximum=134.0
+First 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 1: 2017-12-31T23:00:00Z | '55.0'
+  row 2: 2018-01-01T00:00:00Z | '54.0'
+  row 3: 2018-01-01T01:00:00Z | '53.0'
+  row 4: 2018-01-01T02:00:00Z | '54.0'
+  row 5: 2018-01-01T03:00:00Z | '58.0'
+  row 6: 2018-01-01T04:00:00Z | '55.0'
+  row 7: 2018-01-01T05:00:00Z | '55.0'
+  row 8: 2018-01-01T06:00:00Z | '69.0'
+  row 9: 2018-01-01T07:00:00Z | '88.0'
+  row 10: 2018-01-01T08:00:00Z | '93.0'
+Last 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 36327: 2022-02-22T13:00:00Z | '70.0'
+  row 36328: 2022-02-22T14:00:00Z | '78.0'
+  row 36329: 2022-02-22T15:00:00Z | '83.0'
+  row 36330: 2022-02-22T16:00:00Z | '85.0'
+  row 36331: 2022-02-22T17:00:00Z | '86.0'
+  row 36332: 2022-02-22T18:00:00Z | '82.0'
+  row 36333: 2022-02-22T19:00:00Z | '91.0'
+  row 36334: 2022-02-22T20:00:00Z | '86.0'
+  row 36335: 2022-02-22T21:00:00Z | '64.0'
+  row 36336: 2022-02-22T22:00:00Z | '58.0'
+Duplicate timestamps: 0 distinct timestamp(s), 0 affected rows, 0 extra occurrences
+Consecutive chronological timestamp pairs: 36335
+Timestamp pairs NOT exactly one hour apart (including zero-duration duplicates): 0
+Pairs excluded because either timestamp is duplicated: 0
+Further pairs excluded for missing/non-numeric readings: 0
+Further pairs excluded across unplaceable source rows: 0
+All valid consecutive comparisons, including gaps (not hourly energy): 36335 eligible pair(s)
+  Increases: 15931 (43.8448%)
+  Decreases: 16579 (45.6282%)
+  Unchanged: 3825 (10.5270%)
+  Consecutive differences: minimum=-74.0, median=0.0, maximum=71.0
+Exactly-one-hour consecutive comparisons ONLY: 36335 eligible pair(s)
+  Increases: 15931 (43.8448%)
+  Decreases: 16579 (45.6282%)
+  Unchanged: 3825 (10.5270%)
+  Consecutive differences: minimum=-74.0, median=0.0, maximum=71.0
+Decrease examples (up to 10 eligible chronological pairs; elapsed time explicitly shown):
+  2017-12-31T23:00:00Z | '55.0' -> 2018-01-01T00:00:00Z | '54.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T00:00:00Z | '54.0' -> 2018-01-01T01:00:00Z | '53.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T03:00:00Z | '58.0' -> 2018-01-01T04:00:00Z | '55.0'; difference=-3.0; elapsed=1:00:00
+  2018-01-01T09:00:00Z | '106.0' -> 2018-01-01T10:00:00Z | '90.0'; difference=-16.0; elapsed=1:00:00
+  2018-01-01T10:00:00Z | '90.0' -> 2018-01-01T11:00:00Z | '88.0'; difference=-2.0; elapsed=1:00:00
+  2018-01-01T12:00:00Z | '94.0' -> 2018-01-01T13:00:00Z | '86.0'; difference=-8.0; elapsed=1:00:00
+  2018-01-01T13:00:00Z | '86.0' -> 2018-01-01T14:00:00Z | '84.0'; difference=-2.0; elapsed=1:00:00
+  2018-01-01T16:00:00Z | '88.0' -> 2018-01-01T17:00:00Z | '87.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T19:00:00Z | '97.0' -> 2018-01-01T20:00:00Z | '89.0'; difference=-8.0; elapsed=1:00:00
+  2018-01-01T20:00:00Z | '89.0' -> 2018-01-01T21:00:00Z | '85.0'; difference=-4.0; elapsed=1:00:00
+Suggested interpretation: documented hourly energy
+Evidence: Documented hourly energy (provided L14 interpretation). Nonnegative readings rise and fall over one-hour pairs; observed behaviour is consistent, not proof.
+Requires review: no (documented interpretation and observed behaviour are consistent)
+
+====================================================================================================
+Building: L14_B03 | Channel: EM02.Pt
+File path: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/L14_B03/1h/adrenalin.1h.L14.B03.EM02.Pt.csv
+Exact column headers: ["timestamp [UTC]", "value Pt [Consumed active energy (kWh)]"]
+Stated unit: kWh
+Total data rows (excluding header; blank/malformed records counted): 36648
+Valid finite numeric readings: 36648
+Missing/non-numeric/non-finite or malformed readings: 0
+Valid UTC timestamps: 36648; missing/invalid/naive timestamps: 0
+Rows with an unexpected column count: 0
+First timestamp (chronological UTC): 2017-12-31T23:00:00Z
+Last timestamp (chronological UTC): 2022-03-10T22:00:00Z
+Reading statistics (all finite numeric readings, original stated unit): minimum=8.0, median=22.0, maximum=114.0
+First 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 1: 2017-12-31T23:00:00Z | '18.0'
+  row 2: 2018-01-01T00:00:00Z | '16.0'
+  row 3: 2018-01-01T01:00:00Z | '17.0'
+  row 4: 2018-01-01T02:00:00Z | '18.0'
+  row 5: 2018-01-01T03:00:00Z | '16.0'
+  row 6: 2018-01-01T04:00:00Z | '16.0'
+  row 7: 2018-01-01T05:00:00Z | '18.0'
+  row 8: 2018-01-01T06:00:00Z | '17.0'
+  row 9: 2018-01-01T07:00:00Z | '16.0'
+  row 10: 2018-01-01T08:00:00Z | '37.0'
+Last 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 36639: 2022-03-10T13:00:00Z | '74.0'
+  row 36640: 2022-03-10T14:00:00Z | '54.0'
+  row 36641: 2022-03-10T15:00:00Z | '41.0'
+  row 36642: 2022-03-10T16:00:00Z | '29.0'
+  row 36643: 2022-03-10T17:00:00Z | '27.0'
+  row 36644: 2022-03-10T18:00:00Z | '24.0'
+  row 36645: 2022-03-10T19:00:00Z | '13.0'
+  row 36646: 2022-03-10T20:00:00Z | '14.0'
+  row 36647: 2022-03-10T21:00:00Z | '13.0'
+  row 36648: 2022-03-10T22:00:00Z | '12.0'
+Duplicate timestamps: 0 distinct timestamp(s), 0 affected rows, 0 extra occurrences
+Consecutive chronological timestamp pairs: 36647
+Timestamp pairs NOT exactly one hour apart (including zero-duration duplicates): 2
+Pairs excluded because either timestamp is duplicated: 0
+Further pairs excluded for missing/non-numeric readings: 0
+Further pairs excluded across unplaceable source rows: 0
+All valid consecutive comparisons, including gaps (not hourly energy): 36647 eligible pair(s)
+  Increases: 14429 (39.3729%)
+  Decreases: 17280 (47.1526%)
+  Unchanged: 4938 (13.4745%)
+  Consecutive differences: minimum=-62.0, median=0.0, maximum=61.0
+Exactly-one-hour consecutive comparisons ONLY: 36645 eligible pair(s)
+  Increases: 14428 (39.3724%)
+  Decreases: 17280 (47.1551%)
+  Unchanged: 4937 (13.4725%)
+  Consecutive differences: minimum=-62.0, median=0.0, maximum=61.0
+Decrease examples (up to 10 eligible chronological pairs; elapsed time explicitly shown):
+  2017-12-31T23:00:00Z | '18.0' -> 2018-01-01T00:00:00Z | '16.0'; difference=-2.0; elapsed=1:00:00
+  2018-01-01T02:00:00Z | '18.0' -> 2018-01-01T03:00:00Z | '16.0'; difference=-2.0; elapsed=1:00:00
+  2018-01-01T05:00:00Z | '18.0' -> 2018-01-01T06:00:00Z | '17.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T06:00:00Z | '17.0' -> 2018-01-01T07:00:00Z | '16.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T08:00:00Z | '37.0' -> 2018-01-01T09:00:00Z | '16.0'; difference=-21.0; elapsed=1:00:00
+  2018-01-01T11:00:00Z | '16.0' -> 2018-01-01T12:00:00Z | '15.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T14:00:00Z | '34.0' -> 2018-01-01T15:00:00Z | '28.0'; difference=-6.0; elapsed=1:00:00
+  2018-01-01T15:00:00Z | '28.0' -> 2018-01-01T16:00:00Z | '26.0'; difference=-2.0; elapsed=1:00:00
+  2018-01-01T16:00:00Z | '26.0' -> 2018-01-01T17:00:00Z | '22.0'; difference=-4.0; elapsed=1:00:00
+  2018-01-01T17:00:00Z | '22.0' -> 2018-01-01T18:00:00Z | '18.0'; difference=-4.0; elapsed=1:00:00
+Suggested interpretation: documented hourly energy
+Evidence: Documented hourly energy (provided L14 interpretation). Nonnegative readings rise and fall over one-hour pairs; observed behaviour is consistent, not proof.
+Requires review: no (documented interpretation and observed behaviour are consistent)
+
+====================================================================================================
+Building: L14_B04 | Channel: EM02.Pt
+File path: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/L14_B04/1h/adrenalin.1h.L14.B04.EM02.Pt.csv
+Exact column headers: ["timestamp [UTC]", "value Pt [Consumed active energy (kWh)]"]
+Stated unit: kWh
+Total data rows (excluding header; blank/malformed records counted): 36889
+Valid finite numeric readings: 36889
+Missing/non-numeric/non-finite or malformed readings: 0
+Valid UTC timestamps: 36889; missing/invalid/naive timestamps: 0
+Rows with an unexpected column count: 0
+First timestamp (chronological UTC): 2017-12-31T23:00:00Z
+Last timestamp (chronological UTC): 2022-03-17T23:00:00Z
+Reading statistics (all finite numeric readings, original stated unit): minimum=0.0, median=154.0, maximum=376.0
+First 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 1: 2017-12-31T23:00:00Z | '136.0'
+  row 2: 2018-01-01T00:00:00Z | '134.0'
+  row 3: 2018-01-01T01:00:00Z | '135.0'
+  row 4: 2018-01-01T02:00:00Z | '135.0'
+  row 5: 2018-01-01T03:00:00Z | '135.0'
+  row 6: 2018-01-01T04:00:00Z | '136.0'
+  row 7: 2018-01-01T05:00:00Z | '177.0'
+  row 8: 2018-01-01T06:00:00Z | '168.0'
+  row 9: 2018-01-01T07:00:00Z | '168.0'
+  row 10: 2018-01-01T08:00:00Z | '168.0'
+Last 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 36880: 2022-03-17T14:00:00Z | '238.5'
+  row 36881: 2022-03-17T15:00:00Z | '216.0'
+  row 36882: 2022-03-17T16:00:00Z | '196.0'
+  row 36883: 2022-03-17T17:00:00Z | '165.0'
+  row 36884: 2022-03-17T18:00:00Z | '155.0'
+  row 36885: 2022-03-17T19:00:00Z | '155.5'
+  row 36886: 2022-03-17T20:00:00Z | '151.0'
+  row 36887: 2022-03-17T21:00:00Z | '135.0'
+  row 36888: 2022-03-17T22:00:00Z | '130.0'
+  row 36889: 2022-03-17T23:00:00Z | '0.0'
+Duplicate timestamps: 0 distinct timestamp(s), 0 affected rows, 0 extra occurrences
+Consecutive chronological timestamp pairs: 36888
+Timestamp pairs NOT exactly one hour apart (including zero-duration duplicates): 0
+Pairs excluded because either timestamp is duplicated: 0
+Further pairs excluded for missing/non-numeric readings: 0
+Further pairs excluded across unplaceable source rows: 0
+All valid consecutive comparisons, including gaps (not hourly energy): 36888 eligible pair(s)
+  Increases: 14733 (39.9398%)
+  Decreases: 19277 (52.2582%)
+  Unchanged: 2878 (7.8020%)
+  Consecutive differences: minimum=-130.0, median=-1.0, maximum=137.0
+Exactly-one-hour consecutive comparisons ONLY: 36888 eligible pair(s)
+  Increases: 14733 (39.9398%)
+  Decreases: 19277 (52.2582%)
+  Unchanged: 2878 (7.8020%)
+  Consecutive differences: minimum=-130.0, median=-1.0, maximum=137.0
+Decrease examples (up to 10 eligible chronological pairs; elapsed time explicitly shown):
+  2017-12-31T23:00:00Z | '136.0' -> 2018-01-01T00:00:00Z | '134.0'; difference=-2.0; elapsed=1:00:00
+  2018-01-01T05:00:00Z | '177.0' -> 2018-01-01T06:00:00Z | '168.0'; difference=-9.0; elapsed=1:00:00
+  2018-01-01T08:00:00Z | '168.0' -> 2018-01-01T09:00:00Z | '167.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T09:00:00Z | '167.0' -> 2018-01-01T10:00:00Z | '166.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T11:00:00Z | '167.0' -> 2018-01-01T12:00:00Z | '166.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T12:00:00Z | '166.0' -> 2018-01-01T13:00:00Z | '165.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T14:00:00Z | '165.0' -> 2018-01-01T15:00:00Z | '163.0'; difference=-2.0; elapsed=1:00:00
+  2018-01-01T15:00:00Z | '163.0' -> 2018-01-01T16:00:00Z | '162.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T16:00:00Z | '162.0' -> 2018-01-01T17:00:00Z | '158.0'; difference=-4.0; elapsed=1:00:00
+  2018-01-01T17:00:00Z | '158.0' -> 2018-01-01T18:00:00Z | '137.0'; difference=-21.0; elapsed=1:00:00
+Suggested interpretation: documented hourly energy
+Evidence: Documented hourly energy (provided L14 interpretation). Nonnegative readings rise and fall over one-hour pairs; observed behaviour is consistent, not proof.
+Requires review: no (documented interpretation and observed behaviour are consistent)
+
+====================================================================================================
+Building: L14_B05 | Channel: EM02.Pt
+File path: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/L14_B05/1h/adrenalin.1h.L14.B05.EM02.Pt.csv
+Exact column headers: ["timestamp [UTC]", "value Pt [Consumed active energy (kWh)]"]
+Stated unit: kWh
+Total data rows (excluding header; blank/malformed records counted): 35040
+Valid finite numeric readings: 35040
+Missing/non-numeric/non-finite or malformed readings: 0
+Valid UTC timestamps: 35040; missing/invalid/naive timestamps: 0
+Rows with an unexpected column count: 0
+First timestamp (chronological UTC): 2017-12-31T23:00:00Z
+Last timestamp (chronological UTC): 2021-12-31T22:00:00Z
+Reading statistics (all finite numeric readings, original stated unit): minimum=1.0, median=6.0, maximum=23.0
+First 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 1: 2017-12-31T23:00:00Z | '5.0'
+  row 2: 2018-01-01T00:00:00Z | '6.0'
+  row 3: 2018-01-01T01:00:00Z | '4.0'
+  row 4: 2018-01-01T02:00:00Z | '5.0'
+  row 5: 2018-01-01T03:00:00Z | '5.0'
+  row 6: 2018-01-01T04:00:00Z | '5.0'
+  row 7: 2018-01-01T05:00:00Z | '5.0'
+  row 8: 2018-01-01T06:00:00Z | '6.0'
+  row 9: 2018-01-01T07:00:00Z | '4.0'
+  row 10: 2018-01-01T08:00:00Z | '5.0'
+Last 10 timestamp/value pairs (chronological UTC; raw value text preserved):
+  row 35031: 2021-12-31T13:00:00Z | '5.0'
+  row 35032: 2021-12-31T14:00:00Z | '5.0'
+  row 35033: 2021-12-31T15:00:00Z | '5.0'
+  row 35034: 2021-12-31T16:00:00Z | '5.0'
+  row 35035: 2021-12-31T17:00:00Z | '5.0'
+  row 35036: 2021-12-31T18:00:00Z | '5.0'
+  row 35037: 2021-12-31T19:00:00Z | '5.0'
+  row 35038: 2021-12-31T20:00:00Z | '6.0'
+  row 35039: 2021-12-31T21:00:00Z | '4.0'
+  row 35040: 2021-12-31T22:00:00Z | '5.0'
+Duplicate timestamps: 0 distinct timestamp(s), 0 affected rows, 0 extra occurrences
+Consecutive chronological timestamp pairs: 35039
+Timestamp pairs NOT exactly one hour apart (including zero-duration duplicates): 1
+Pairs excluded because either timestamp is duplicated: 0
+Further pairs excluded for missing/non-numeric readings: 0
+Further pairs excluded across unplaceable source rows: 0
+All valid consecutive comparisons, including gaps (not hourly energy): 35039 eligible pair(s)
+  Increases: 12103 (34.5415%)
+  Decreases: 12210 (34.8469%)
+  Unchanged: 10726 (30.6116%)
+  Consecutive differences: minimum=-13.0, median=0.0, maximum=16.0
+Exactly-one-hour consecutive comparisons ONLY: 35038 eligible pair(s)
+  Increases: 12102 (34.5396%)
+  Decreases: 12210 (34.8479%)
+  Unchanged: 10726 (30.6125%)
+  Consecutive differences: minimum=-13.0, median=0.0, maximum=16.0
+Decrease examples (up to 10 eligible chronological pairs; elapsed time explicitly shown):
+  2018-01-01T00:00:00Z | '6.0' -> 2018-01-01T01:00:00Z | '4.0'; difference=-2.0; elapsed=1:00:00
+  2018-01-01T06:00:00Z | '6.0' -> 2018-01-01T07:00:00Z | '4.0'; difference=-2.0; elapsed=1:00:00
+  2018-01-01T16:00:00Z | '5.0' -> 2018-01-01T17:00:00Z | '4.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-01T18:00:00Z | '6.0' -> 2018-01-01T19:00:00Z | '5.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-02T14:00:00Z | '16.0' -> 2018-01-02T15:00:00Z | '10.0'; difference=-6.0; elapsed=1:00:00
+  2018-01-02T15:00:00Z | '10.0' -> 2018-01-02T16:00:00Z | '5.0'; difference=-5.0; elapsed=1:00:00
+  2018-01-02T18:00:00Z | '6.0' -> 2018-01-02T19:00:00Z | '5.0'; difference=-1.0; elapsed=1:00:00
+  2018-01-02T21:00:00Z | '6.0' -> 2018-01-02T22:00:00Z | '4.0'; difference=-2.0; elapsed=1:00:00
+  2018-01-03T00:00:00Z | '6.0' -> 2018-01-03T01:00:00Z | '4.0'; difference=-2.0; elapsed=1:00:00
+  2018-01-03T02:00:00Z | '6.0' -> 2018-01-03T03:00:00Z | '5.0'; difference=-1.0; elapsed=1:00:00
+Suggested interpretation: documented hourly energy
+Evidence: Documented hourly energy (provided L14 interpretation). Nonnegative readings rise and fall over one-hour pairs; observed behaviour is consistent, not proof.
+Requires review: no (documented interpretation and observed behaviour are consistent)
+
+SUMMARY TABLE
+building_id | channel | stated_unit | suggested_interpretation | evidence | requires_review
+L03_B01 | EM02.Pt | kWh | suggested hourly energy | Numerical suggestion only; no interval/counter documentation assumed. 4305 increases and 4285 decreases in 8735 one-hour pairs; absolute signed change / total absolute change = 0.000; span / median absolute step = 48.78. Bounded, bidirectional variation suggests interval values; metadata/manual review is still required. | yes - manual review required
+L06_B01 | EM01.Pt | kWh | manual review required | Numerical suggestion only; no interval/counter documentation assumed. Direction, scale, and available one-hour comparisons do not give a decisive counter/hourly pattern. | yes - manual review required
+L06_B01 | EM01.ePt | kWh | suggested cumulative energy | Numerical suggestion only; no interval/counter documentation assumed. 557/561 one-hour increases, 2 decreases; median absolute reading / median positive step = 317.23, reading span / median positive step = 637.08. Counter-like levels and trajectory; decreases may be resets/corrections. Metadata/manual review is still required. | yes - manual review required
+L06_B01 | EM02.Pt | kWh | suggested cumulative energy | Numerical suggestion only; no interval/counter documentation assumed. 7225/7228 one-hour increases, 0 decreases; median absolute reading / median positive step = 5185.36, reading span / median positive step = 134241474.16. Counter-like levels and trajectory; decreases may be resets/corrections. Metadata/manual review is still required. | yes - manual review required
+L07_B01 | EM01.Pt | kWh | suggested cumulative energy | Numerical suggestion only; no interval/counter documentation assumed. 9543/9543 one-hour increases, 0 decreases; median absolute reading / median positive step = 4857.09, reading span / median positive step = 9265.52. Counter-like levels and trajectory; decreases may be resets/corrections. Metadata/manual review is still required. | yes - manual review required
+L14_B01 | EM01.Pt | kWh | documented hourly energy | Documented hourly energy (provided L14 interpretation). Nonnegative readings rise and fall over one-hour pairs; observed behaviour is consistent, not proof. | no
+L14_B02 | EM01.Pt | kWh | documented hourly energy | Documented hourly energy (provided L14 interpretation). Nonnegative readings rise and fall over one-hour pairs; observed behaviour is consistent, not proof. | no
+L14_B03 | EM02.Pt | kWh | documented hourly energy | Documented hourly energy (provided L14 interpretation). Nonnegative readings rise and fall over one-hour pairs; observed behaviour is consistent, not proof. | no
+L14_B04 | EM02.Pt | kWh | documented hourly energy | Documented hourly energy (provided L14 interpretation). Nonnegative readings rise and fall over one-hour pairs; observed behaviour is consistent, not proof. | no
+L14_B05 | EM02.Pt | kWh | documented hourly energy | Documented hourly energy (provided L14 interpretation). Nonnegative readings rise and fall over one-hour pairs; observed behaviour is consistent, not proof. | no

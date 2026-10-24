@@ -1,0 +1,25 @@
+{
+  "description": "Explicitly confirmed cumulative channels. Selection does not infer semantics from Pt/ePt names. L03 and L14 are excluded.",
+  "cumulative_channels": [
+    {
+      "building_id": "L06_B01",
+      "channel": "EM01.Pt",
+      "confirmed_cumulative": true
+    },
+    {
+      "building_id": "L06_B01",
+      "channel": "EM01.ePt",
+      "confirmed_cumulative": true
+    },
+    {
+      "building_id": "L06_B01",
+      "channel": "EM02.Pt",
+      "confirmed_cumulative": true
+    },
+    {
+      "building_id": "L07_B01",
+      "channel": "EM01.Pt",
+      "confirmed_cumulative": true
+    }
+  ]
+}

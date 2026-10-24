@@ -1,0 +1,18 @@
+PUBLIC BUILDING, Office from 1871 renovated in 2022 (L14_B04)
+
+EM01 (Combined Electricity and Heating)
+|
+|-------EM02 (Main meter - Electricity Import)
+|	|
+|	|--ES01 (Electricity technical room/server room)
+|	|--ES02 (Electricity technical cooling)
+|
+|-------HM01 (District heating import)
+	|
+	|--HS01 (Heat Total) [TD]*		
+	|--HS02 (Snow Melting) [TD]
+	
+
+*Room Heating + Heat Domestic Hot Water
+NOTE:
+[TD] = temperature dependent loads.

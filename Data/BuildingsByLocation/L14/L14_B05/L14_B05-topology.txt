@@ -1,0 +1,14 @@
+PUBLIC BUILDING, Kindergarten from 1990 renovated in 2013 (L14_B05)
+
+	
+EM01 (Combined Electricity and Heating)
+|
+|-------EM02 (Main meter - Electricity Import)
+|	
+|-------HM01 (District heating import) [TD]
+	|	
+	|--HS01 (Heat Total) [TD]*
+
+*Room Heating + Heat Domestic Hot Water
+NOTE:
+[TD] = temperature dependent loads.

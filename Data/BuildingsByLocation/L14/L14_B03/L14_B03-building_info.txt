@@ -1,0 +1,33 @@
+INSTITUTIONAL (EDUCATION) (L14_B03)
+
+Data Provider: SINTEF
+Climate Zone: Cfb
+
+Building info:
+
+§1 Year Opened = 2010
+
+§2 Number of floors = missing
+
+§3 Size
+- Gross total floor area = 6574 sqm 
+- Gross total heated area = 6574 sqm
+
+§4 Ventilation systems = 1
+- Demand controlled ventilation
+- Used for space heating = YES
+- Used for space cooling = YES
+
+§5 Heating & cooling system
+- Direct electrical heating = NO
+- District heating = YES
+- District cooling = NO
+- Heat pump = NO
+
+§6 Tap water heating
+- District heating = YES
+- Electric heating with accumulator tank = YES
+
+§7 Solar PV = NO
+
+NOTE:

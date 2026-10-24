@@ -1,0 +1,32 @@
+PUBLIC BUILDING (OFFICE) (L14_B04)
+
+Data Provider: SINTEF
+Climate Zone: Dfb
+
+Building info:
+
+§1 Year Opened = 1871 (renovated in 2022)
+
+§2 Number of floors = missing
+
+§3 Size 
+- Gross total floor area = 11502 sqm
+- Gross total heated area = 11502 sqm
+
+§4 Ventilation systems = 1
+- Used for space heating = YES
+- Used for space cooling = YES
+
+§5 Heating & cooling system
+- Direct electrical heating = NO
+- District heating = YES
+- District cooling = NO
+- Heat pump = YES
+
+§6 Tap water heating
+- Electric heating with accumulator tank = YES
+- District heating = YES
+
+§7 Solar PV = NO
+
+NOTE:

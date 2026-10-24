@@ -1,0 +1,28 @@
+Building: L07_B01
+Channel: EM01.Pt
+Source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L07/L07_B01/1h/adrenalin.1h.L07.B01.EM01.Pt.csv
+Selection: explicitly configured confirmed cumulative channel; no filename-based inference.
+The source CSV is preserved. Channels are kept separate and are not labelled total building consumption.
+No absolute differences, zero replacements, interpolation, outlier trimming, or weather merging are used.
+
+STATUS: COMPLETE
+Exact source headers: ["timestamp [UTC]", "value Pt [Consumed active energy (kWh)]"]
+Stated and derived unit: kWh
+Original readings: 9545
+Adjacent original intervals: 9544
+The first reading is a baseline; it is not a separate interval.
+Retained intervals: 9543
+Excluded intervals: 1
+Exclusion reason counts (a pair may have multiple reasons): {"not_exactly_one_hour_apart": 1}
+A negative change across a gap also protects its immediately following original interval.
+Unparseable timestamps stop the file; missing/non-numeric values stay in place and exclude both touching pairs.
+Accepted CSV: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L07/L07_B01/processed/adrenalin.1h.L07.B01.EM01.Pt.hourly_energy.csv
+Excluded CSV: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L07/L07_B01/processed/adrenalin.1h.L07.B01.EM01.Pt.excluded_intervals.csv
+
+LIMITATION
+Intervals containing negative changes in confirmed cumulative energy
+readings, together with their immediately following intervals, were
+excluded. The causes of these decreases could not be established from
+the available documentation. This conservative treatment may discard
+valid observations following genuine counter resets, reduces temporal
+coverage, and does not resolve all possible measurement errors.

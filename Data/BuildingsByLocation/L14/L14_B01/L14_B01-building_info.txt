@@ -1,0 +1,33 @@
+INSTITUTIONAL (EDUCATION) (L14_B01)
+
+Data Provider: SINTEF
+Climate Zone: Cfb
+
+Building info:
+
+§1 Year Opened = 1914 (renovated in 2001) 
+
+§2 Number of floors = missing
+
+§3 Size 
+- Gross total floor area = 6084 sqm 
+- Gross total heated area = 6084 sqm
+
+§4 Ventilation systems = 1
+- Demand controlled ventilation
+- Used for space heating = YES
+- Used for space cooling = YES
+
+§5 Heating & cooling system
+- Direct electrical heating (electric boiler) = YES
+- District heating = NO
+- District cooling = NO
+- Heat pump (ground source) = YES
+
+§6 Tap water heating
+- Heat pump (ground source) = YES
+- Electric boiler = YES
+
+§7 Solar PV = NO
+
+NOTE:

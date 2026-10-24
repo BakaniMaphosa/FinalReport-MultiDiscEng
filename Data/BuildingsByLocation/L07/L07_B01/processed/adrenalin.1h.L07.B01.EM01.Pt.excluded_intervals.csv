@@ -1,0 +1,2 @@
+interval_start_utc,interval_end_utc,previous_reading_kwh,current_reading_kwh,difference_kwh,exclusion_reason,previous_source_row,current_source_row
+2021-12-01T20:00:00Z,2021-12-01T22:00:00Z,24464.5,24546.900390625,82.400390625,not_exactly_one_hour_apart,63,64

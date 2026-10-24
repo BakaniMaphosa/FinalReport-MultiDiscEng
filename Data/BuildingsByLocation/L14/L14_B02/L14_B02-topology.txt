@@ -1,0 +1,10 @@
+PUBLIC BUILDING, Nursing home (L14_B02)
+
+EM01 (Main meter)
+|
+|-- ES01 (Electricity HP) [TD] -----> HS01 (Heat HP)
+|-- ES02 (Electricity Boiler)
+|-- ES03 (Electricity Other)
+
+NOTE:
+[TD] = temperature dependent loads.
