@@ -1,0 +1,155 @@
+Building metadata report
+Empty metadata cells = missing/ambiguous; explicit YES/NO = 1/0.
+Heating/cooling flags exclude tap-water heating. Opening years exclude renovations.
+electricity_kwh_per_m2 = electricity_kwh / floor_area_m2 (28 significant digits);
+empty if reading is missing/non-numeric/non-finite or floor area is missing.
+Verified: matching CSV/TXT identity, positive supplied areas, row counts/order,
+all original headers/cells (including timestamps), and repeated metadata.
+
+L03_B01: 8736 input rows = 8736 output rows
+  Metadata source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L03/L03_B01/L03_B01-building_info.txt
+  CSV source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L03/unifieddataconsumption/L03_B01_consumption_weather.csv
+  Output: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L03/unifieddataconsumption/L03_B01_model_input.csv
+  floor_area_m2: 1013
+  heated_area_m2: 1013
+  building_use: INSTITUTIONAL (EDUCATION)
+  climate_zone: Cfb
+  year_opened: 2013
+  number_of_floors: (empty)
+  ventilation_system_count: 2
+  ventilation_used_for_heating: 1
+  ventilation_used_for_cooling: 0
+  has_direct_electric_heating: 0
+  has_district_heating: 0
+  has_district_cooling: 0
+  has_heat_pump: 0
+  has_solar_pv: 0
+  Missing/ambiguous fields:
+    number_of_floors: ambiguous/conflicting entries: line 10: '4'; line 12: '1'
+
+L07_B01: 9543 input rows = 9543 output rows
+  Metadata source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L07/L07_B01/L07_B01-building_info.txt
+  CSV source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L07/unifieddataconsumption/L07_B01_consumption_weather.csv
+  Output: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L07/unifieddataconsumption/L07_B01_model_input.csv
+  floor_area_m2: 450
+  heated_area_m2: 450
+  building_use: COMMERCIAL (GROCERY STORE)
+  climate_zone: Cfb
+  year_opened: 1999
+  number_of_floors: 1
+  ventilation_system_count: 1
+  ventilation_used_for_heating: 1
+  ventilation_used_for_cooling: 1
+  has_direct_electric_heating: 0
+  has_district_heating: 0
+  has_district_cooling: 0
+  has_heat_pump: 0
+  has_solar_pv: 0
+  Missing/ambiguous fields:
+    none
+
+L14_B01: 36360 input rows = 36360 output rows
+  Metadata source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/L14_B01/L14_B01-building_info.txt
+  CSV source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/unifieddataconsumption/L14_B01_consumption_weather.csv
+  Output: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/unifieddataconsumption/L14_B01_model_input.csv
+  floor_area_m2: 6084
+  heated_area_m2: 6084
+  building_use: INSTITUTIONAL (EDUCATION)
+  climate_zone: Cfb
+  year_opened: 1914
+  number_of_floors: (empty)
+  ventilation_system_count: 1
+  ventilation_used_for_heating: 1
+  ventilation_used_for_cooling: 1
+  has_direct_electric_heating: 1
+  has_district_heating: 0
+  has_district_cooling: 0
+  has_heat_pump: 1
+  has_solar_pv: 0
+  Missing/ambiguous fields:
+    number_of_floors: line 10: 'missing' (explicitly missing)
+
+L14_B02: 36336 input rows = 36336 output rows
+  Metadata source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/L14_B02/L14_B02-building_info.txt
+  CSV source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/unifieddataconsumption/L14_B02_consumption_weather.csv
+  Output: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/unifieddataconsumption/L14_B02_model_input.csv
+  floor_area_m2: 2700
+  heated_area_m2: 2700
+  building_use: SERVICE (NURSING HOME)
+  climate_zone: Dfb
+  year_opened: (empty)
+  number_of_floors: (empty)
+  ventilation_system_count: 1
+  ventilation_used_for_heating: 1
+  ventilation_used_for_cooling: 1
+  has_direct_electric_heating: 1
+  has_district_heating: 0
+  has_district_cooling: 0
+  has_heat_pump: 1
+  has_solar_pv: 0
+  Missing/ambiguous fields:
+    year_opened: line 8: 'missing' (explicitly missing)
+    number_of_floors: line 10: 'missing' (explicitly missing)
+
+L14_B03: 36648 input rows = 36648 output rows
+  Metadata source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/L14_B03/L14_B03-building_info.txt
+  CSV source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/unifieddataconsumption/L14_B03_consumption_weather.csv
+  Output: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/unifieddataconsumption/L14_B03_model_input.csv
+  floor_area_m2: 6574
+  heated_area_m2: 6574
+  building_use: INSTITUTIONAL (EDUCATION)
+  climate_zone: Cfb
+  year_opened: 2010
+  number_of_floors: (empty)
+  ventilation_system_count: 1
+  ventilation_used_for_heating: 1
+  ventilation_used_for_cooling: 1
+  has_direct_electric_heating: 0
+  has_district_heating: 1
+  has_district_cooling: 0
+  has_heat_pump: 0
+  has_solar_pv: 0
+  Missing/ambiguous fields:
+    number_of_floors: line 10: 'missing' (explicitly missing)
+
+L14_B04: 36889 input rows = 36889 output rows
+  Metadata source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/L14_B04/L14_B04-building_info.txt
+  CSV source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/unifieddataconsumption/L14_B04_consumption_weather.csv
+  Output: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/unifieddataconsumption/L14_B04_model_input.csv
+  floor_area_m2: 11502
+  heated_area_m2: 11502
+  building_use: PUBLIC BUILDING (OFFICE)
+  climate_zone: Dfb
+  year_opened: 1871
+  number_of_floors: (empty)
+  ventilation_system_count: 1
+  ventilation_used_for_heating: 1
+  ventilation_used_for_cooling: 1
+  has_direct_electric_heating: 0
+  has_district_heating: 1
+  has_district_cooling: 0
+  has_heat_pump: 1
+  has_solar_pv: 0
+  Missing/ambiguous fields:
+    number_of_floors: line 10: 'missing' (explicitly missing)
+
+L14_B05: 35040 input rows = 35040 output rows
+  Metadata source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/L14_B05/L14_B05-building_info.txt
+  CSV source: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/unifieddataconsumption/L14_B05_consumption_weather.csv
+  Output: /Users/bakani/Desktop/E.Consumption_predictionModel/Data/BuildingsByLocation/L14/unifieddataconsumption/L14_B05_model_input.csv
+  floor_area_m2: 988
+  heated_area_m2: 988
+  building_use: PUBLIC BUILDING (KINDERGARTEN)
+  climate_zone: Dfb
+  year_opened: 1990
+  number_of_floors: (empty)
+  ventilation_system_count: 1
+  ventilation_used_for_heating: 1
+  ventilation_used_for_cooling: 0
+  has_direct_electric_heating: 0
+  has_district_heating: 1
+  has_district_cooling: 0
+  has_heat_pump: 0
+  has_solar_pv: 0
+  Missing/ambiguous fields:
+    number_of_floors: line 10: 'missing' (explicitly missing)
