@@ -1,0 +1,5024 @@
+{
+  "training_rows": 64531,
+  "global_mean": 0.3419303502271589,
+  "calendar_timezone": "UTC",
+  "weighting": "equal per training row within each group",
+  "fallback_order": [
+    [
+      "building_use",
+      "weekday",
+      "hour"
+    ],
+    [
+      "building_use",
+      "hour"
+    ],
+    [
+      "weekday",
+      "hour"
+    ],
+    [
+      "global_training_mean"
+    ]
+  ],
+  "lookup_tables": [
+    {
+      "keys": [
+        "building_use",
+        "weekday",
+        "hour"
+      ],
+      "groups": [
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 0,
+          "mean": 2.28905184976261,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 1,
+          "mean": 2.287876651154045,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 2,
+          "mean": 2.3174916560898793,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 3,
+          "mean": 2.3823626192826586,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 4,
+          "mean": 3.475062285526254,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 5,
+          "mean": 4.032106425985991,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 6,
+          "mean": 4.525924881304941,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 7,
+          "mean": 4.754853570253372,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 8,
+          "mean": 4.7137216189536035,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 9,
+          "mean": 4.910919945470785,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 10,
+          "mean": 4.565881633996145,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 11,
+          "mean": 4.166784186527523,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 12,
+          "mean": 5.239505476425516,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 13,
+          "mean": 4.680581018192075,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 14,
+          "mean": 3.566022657829173,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 15,
+          "mean": 3.4969209796455596,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 16,
+          "mean": 2.8308184083110044,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 17,
+          "mean": 2.8279979316504487,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 18,
+          "mean": 2.72834108964415,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 19,
+          "mean": 2.56686880082734,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 20,
+          "mean": 2.5151600620504864,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 21,
+          "mean": 2.4662717999341885,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 22,
+          "mean": 3.087481784421567,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 0,
+          "hour": 23,
+          "mean": 2.6298594462464155,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 0,
+          "mean": 2.4084520283927984,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 1,
+          "mean": 2.419733935035021,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 2,
+          "mean": 2.4025760353499743,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 3,
+          "mean": 2.4744981901941427,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 4,
+          "mean": 3.6395900907253327,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 5,
+          "mean": 4.192873595637662,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 6,
+          "mean": 4.621586048042119,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 7,
+          "mean": 4.594321440323414,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 8,
+          "mean": 4.705260188971936,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 9,
+          "mean": 5.07051191651389,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 10,
+          "mean": 4.7912847271188825,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 11,
+          "mean": 4.1717200206834955,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 12,
+          "mean": 5.404738400789733,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 13,
+          "mean": 4.652846331029944,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 14,
+          "mean": 3.7803788840314008,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 15,
+          "mean": 3.582005358905655,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 16,
+          "mean": 2.787571099515818,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 17,
+          "mean": 2.830113289145866,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 18,
+          "mean": 2.754900578197715,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 19,
+          "mean": 2.5323179617355334,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 20,
+          "mean": 2.3680251962581673,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 21,
+          "mean": 2.3692003948667324,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 22,
+          "mean": 2.9690217646782306,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 1,
+          "hour": 23,
+          "mean": 2.5459502655948856,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 0,
+          "mean": 2.347576740469139,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 1,
+          "mean": 2.3395853899308983,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 2,
+          "mean": 2.371550792083862,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 3,
+          "mean": 2.4112725050533537,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 4,
+          "mean": 3.6149109199454705,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 5,
+          "mean": 4.082875005875993,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 6,
+          "mean": 4.594086400601701,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 7,
+          "mean": 4.388661683824567,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 8,
+          "mean": 4.726178724204391,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 9,
+          "mean": 5.210125511211395,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 10,
+          "mean": 4.709960983406195,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 11,
+          "mean": 4.27654773656748,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 12,
+          "mean": 5.24538146946834,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 13,
+          "mean": 4.764725238565317,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 14,
+          "mean": 3.787665115404503,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 15,
+          "mean": 3.6941709002479954,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 16,
+          "mean": 2.8184816892591433,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 17,
+          "mean": 2.7876628223340476,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 18,
+          "mean": 2.7946452218717646,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 19,
+          "mean": 2.5517058724387836,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 20,
+          "mean": 2.4226518671899453,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 21,
+          "mean": 2.4414321142224256,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 22,
+          "mean": 3.137986661209159,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 2,
+          "hour": 23,
+          "mean": 2.677870608913394,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 0,
+          "mean": 2.4818818770616136,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 1,
+          "mean": 2.4638239472226906,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 2,
+          "mean": 2.4958466761370475,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 3,
+          "mean": 2.4358943490718223,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 4,
+          "mean": 3.5521151855151323,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 5,
+          "mean": 4.049069414682301,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 6,
+          "mean": 4.584787999903691,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 7,
+          "mean": 4.322586858642525,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 8,
+          "mean": 4.529891893193364,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 9,
+          "mean": 5.085353815038644,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 10,
+          "mean": 4.846026051573448,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 11,
+          "mean": 4.506296198203838,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 12,
+          "mean": 5.233188067319962,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 13,
+          "mean": 4.779332097368358,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 14,
+          "mean": 3.845135193701394,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 15,
+          "mean": 3.7866275010232826,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 16,
+          "mean": 2.8582091349047745,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 17,
+          "mean": 2.9369417090024803,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 18,
+          "mean": 2.7342113500108347,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 19,
+          "mean": 2.5117376543953003,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 20,
+          "mean": 2.364144174511834,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 21,
+          "mean": 2.327787542436135,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 22,
+          "mean": 3.00989574555173,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 3,
+          "hour": 23,
+          "mean": 2.58156164977247,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 0,
+          "mean": 2.3569210025762644,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 1,
+          "mean": 2.379794380372234,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 2,
+          "mean": 2.369441167264585,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 3,
+          "mean": 2.4065201165338403,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 4,
+          "mean": 3.458454722750584,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 5,
+          "mean": 4.047384007897334,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 6,
+          "mean": 4.354609587556883,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 7,
+          "mean": 4.345941781234199,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 8,
+          "mean": 4.909108419810753,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 9,
+          "mean": 5.081019911877302,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 10,
+          "mean": 4.607902150097513,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 11,
+          "mean": 4.45958635302049,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 12,
+          "mean": 5.149399272867358,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 13,
+          "mean": 4.329569258180242,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 14,
+          "mean": 3.5981027135049235,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 15,
+          "mean": 3.6067705198276068,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 16,
+          "mean": 2.811980834517131,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 17,
+          "mean": 2.6848530084511113,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 18,
+          "mean": 2.5521874172344883,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 19,
+          "mean": 2.393036862254111,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 20,
+          "mean": 2.3034695302530515,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 21,
+          "mean": 2.298894854693858,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 22,
+          "mean": 2.966797486336166,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 4,
+          "hour": 23,
+          "mean": 2.483808056244432,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 0,
+          "mean": 2.2690390773601714,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 1,
+          "mean": 2.2692798497580235,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 2,
+          "mean": 2.270483711747285,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 3,
+          "mean": 2.2565189126718512,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 4,
+          "mean": 2.1296318590036836,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 5,
+          "mean": 1.9914285026364575,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 6,
+          "mean": 1.936532395926131,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 7,
+          "mean": 1.7947174535911201,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 8,
+          "mean": 1.7041870319986516,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 9,
+          "mean": 1.651698649266848,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 10,
+          "mean": 1.6064334384706136,
+          "count": 41
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 11,
+          "mean": 1.6194236826023598,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 12,
+          "mean": 1.6102571334555538,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 13,
+          "mean": 1.649273727259907,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 14,
+          "mean": 1.6939312743853712,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 15,
+          "mean": 1.7714943825506513,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 16,
+          "mean": 1.8373055046302826,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 17,
+          "mean": 1.9510647299393598,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 18,
+          "mean": 2.0864476096460303,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 19,
+          "mean": 2.201617073285385,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 20,
+          "mean": 2.2145442579795986,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 21,
+          "mean": 2.219010012692145,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 22,
+          "mean": 2.8627838104639687,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 5,
+          "hour": 23,
+          "mean": 2.503878155408264,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 0,
+          "mean": 2.280120340337517,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 1,
+          "mean": 2.2688384336952945,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 2,
+          "mean": 2.315846378037888,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 3,
+          "mean": 2.2812955389460816,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 4,
+          "mean": 2.1675363136370045,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 5,
+          "mean": 2.0540121280496404,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 6,
+          "mean": 1.9397828232971375,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 7,
+          "mean": 1.7893574014008369,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 8,
+          "mean": 1.6885253607859727,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 9,
+          "mean": 1.6537394819724531,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 10,
+          "mean": 1.6076716965167113,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 11,
+          "mean": 1.6130776101161095,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 12,
+          "mean": 1.6104921731772668,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 13,
+          "mean": 1.6386969397828233,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 14,
+          "mean": 1.6831194471865745,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 15,
+          "mean": 1.7682038264466695,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 16,
+          "mean": 1.8589291590278758,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 17,
+          "mean": 1.9701029473981102,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 18,
+          "mean": 2.1132421379213087,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 19,
+          "mean": 2.219950171578997,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 20,
+          "mean": 2.219245052413858,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 21,
+          "mean": 2.2559112490010813,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 22,
+          "mean": 2.920838621727072,
+          "count": 42
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "weekday": 6,
+          "hour": 23,
+          "mean": 2.49800216236544,
+          "count": 42
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 0,
+          "mean": 0.004733448083589858,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 1,
+          "mean": 0.004939513685180202,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 2,
+          "mean": 0.004866784649324788,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 3,
+          "mean": 0.00658197774491498,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 4,
+          "mean": 0.010291158573541124,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 5,
+          "mean": 0.012800310310552935,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 6,
+          "mean": 0.013170016242817967,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 7,
+          "mean": 0.01367911949380586,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 8,
+          "mean": 0.013830638318504646,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 9,
+          "mean": 0.014157918979854012,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 10,
+          "mean": 0.013963974884239571,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 11,
+          "mean": 0.013957914131251624,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 12,
+          "mean": 0.01449732114717928,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 13,
+          "mean": 0.01370942325874561,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 14,
+          "mean": 0.009588111226938785,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 15,
+          "mean": 0.006824407864433023,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 16,
+          "mean": 0.006363790637348734,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 17,
+          "mean": 0.005824383621421072,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 18,
+          "mean": 0.0051698222987223465,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 19,
+          "mean": 0.00496981745011996,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 20,
+          "mean": 0.004854663143348881,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 21,
+          "mean": 0.0048304201313970774,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 22,
+          "mean": 0.004848602390360935,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 0,
+          "hour": 23,
+          "mean": 0.004739508836577809,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 0,
+          "mean": 0.004751630342553712,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 1,
+          "mean": 0.004830420131397079,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 2,
+          "mean": 0.004860723896336835,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 3,
+          "mean": 0.006375912143324637,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 4,
+          "mean": 0.010394191374336295,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 5,
+          "mean": 0.013103347959950499,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 6,
+          "mean": 0.013709423258745622,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 7,
+          "mean": 0.014727629760721422,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 8,
+          "mean": 0.015357948071468355,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 9,
+          "mean": 0.015430677107323766,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 10,
+          "mean": 0.015442798613299669,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 11,
+          "mean": 0.015073092681034647,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 12,
+          "mean": 0.015079153434022595,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 13,
+          "mean": 0.014200344250769666,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 14,
+          "mean": 0.010109335983902592,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 15,
+          "mean": 0.007200174549685998,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 16,
+          "mean": 0.006606220756866781,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 17,
+          "mean": 0.005703168561662051,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 18,
+          "mean": 0.005194065310674151,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 19,
+          "mean": 0.004987999709083811,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 20,
+          "mean": 0.005042546485975371,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 21,
+          "mean": 0.004957695944144056,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 22,
+          "mean": 0.004787994860481416,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 1,
+          "hour": 23,
+          "mean": 0.004848602390360932,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 0,
+          "mean": 0.004769812601517564,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 1,
+          "mean": 0.0048789061553006835,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 2,
+          "mean": 0.0048849669082886415,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 3,
+          "mean": 0.00624863633057766,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 4,
+          "mean": 0.010442677398239902,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 5,
+          "mean": 0.01274576353366138,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 6,
+          "mean": 0.01344275012727577,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 7,
+          "mean": 0.013860942083444404,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 8,
+          "mean": 0.014206405003757624,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 9,
+          "mean": 0.014715508254745527,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 10,
+          "mean": 0.01479429804358889,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 11,
+          "mean": 0.014630657712914205,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 12,
+          "mean": 0.014600353947974454,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 13,
+          "mean": 0.013867002836432349,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 14,
+          "mean": 0.009885088123348392,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 15,
+          "mean": 0.006860772382360729,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 16,
+          "mean": 0.006309243860457169,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 17,
+          "mean": 0.00552740672501147,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 18,
+          "mean": 0.00512739702780669,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 19,
+          "mean": 0.004969817450119955,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 20,
+          "mean": 0.004957695944144056,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 21,
+          "mean": 0.005006181968047663,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 22,
+          "mean": 0.0047758733545055195,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 2,
+          "hour": 23,
+          "mean": 0.004933452932192251,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 0,
+          "mean": 0.004654658294746494,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 1,
+          "mean": 0.004909209920240443,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 2,
+          "mean": 0.004848602390360934,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 3,
+          "mean": 0.006163785788746341,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 4,
+          "mean": 0.010048728454023076,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 5,
+          "mean": 0.012770006545613182,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 6,
+          "mean": 0.013491236151179377,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 7,
+          "mean": 0.014230648015709425,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 8,
+          "mean": 0.014545807171082887,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 9,
+          "mean": 0.014818541055540693,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 10,
+          "mean": 0.014679143736817812,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 11,
+          "mean": 0.014460956629251575,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 12,
+          "mean": 0.014442774370287717,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 13,
+          "mean": 0.013703362505757663,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 14,
+          "mean": 0.009903270382312247,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 15,
+          "mean": 0.006981987442119755,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 16,
+          "mean": 0.006400155155276444,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 17,
+          "mean": 0.005721350820625906,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 18,
+          "mean": 0.005321341123421127,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 19,
+          "mean": 0.005054667991951275,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 20,
+          "mean": 0.004963756697132004,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 21,
+          "mean": 0.004969817450119956,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 22,
+          "mean": 0.004824359378409126,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 3,
+          "hour": 23,
+          "mean": 0.0047576910955416645,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 0,
+          "mean": 0.004854663143348886,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 1,
+          "mean": 0.004775873354505515,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 2,
+          "mean": 0.0049152706732283995,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 3,
+          "mean": 0.006188028800698149,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 4,
+          "mean": 0.010048728454023074,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 5,
+          "mean": 0.012721520521709566,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 6,
+          "mean": 0.01337608184440831,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 7,
+          "mean": 0.013963974884239571,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 8,
+          "mean": 0.01480035879657684,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 9,
+          "mean": 0.014879148585420209,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 10,
+          "mean": 0.014939756115299721,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 11,
+          "mean": 0.014679143736817812,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 12,
+          "mean": 0.014667022230841915,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 13,
+          "mean": 0.013624572716914298,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 14,
+          "mean": 0.009594171979926737,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 15,
+          "mean": 0.006442580426192099,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 16,
+          "mean": 0.0057395330795897625,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 17,
+          "mean": 0.005188004557686201,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 18,
+          "mean": 0.004751630342553715,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 19,
+          "mean": 0.0048364808843850285,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 20,
+          "mean": 0.004769812601517567,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 21,
+          "mean": 0.004781934107493469,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 22,
+          "mean": 0.004751630342553714,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 4,
+          "hour": 23,
+          "mean": 0.004800116366457324,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 0,
+          "mean": 0.0047152658246260035,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 1,
+          "mean": 0.0047516303425537134,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 2,
+          "mean": 0.004727387330601909,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 3,
+          "mean": 0.004763751848529618,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 4,
+          "mean": 0.004697083565662152,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 5,
+          "mean": 0.004800116366457324,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 6,
+          "mean": 0.004787994860481422,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 7,
+          "mean": 0.004903149167252491,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 8,
+          "mean": 0.004709205071638054,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 9,
+          "mean": 0.00488496690828864,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 10,
+          "mean": 0.004769812601517569,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 11,
+          "mean": 0.0049031491672524965,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 12,
+          "mean": 0.0047819341074934706,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 13,
+          "mean": 0.004806177119445272,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 14,
+          "mean": 0.004733448083589859,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 15,
+          "mean": 0.004836480884385031,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 16,
+          "mean": 0.004794055613469369,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 17,
+          "mean": 0.004769812601517565,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 18,
+          "mean": 0.004830420131397079,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 19,
+          "mean": 0.004812237872433223,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 20,
+          "mean": 0.004842541637372979,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 21,
+          "mean": 0.0048001163664573195,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 22,
+          "mean": 0.004755865567533247,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 5,
+          "hour": 23,
+          "mean": 0.004786351885273842,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 0,
+          "mean": 0.004761962831081364,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 1,
+          "mean": 0.0047619628310813684,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 2,
+          "mean": 0.004780254621725725,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 3,
+          "mean": 0.00470099019560017,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 4,
+          "mean": 0.004829032730110678,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 5,
+          "mean": 0.004761962831081366,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 6,
+          "mean": 0.004761962831081361,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 7,
+          "mean": 0.004768060094629485,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 8,
+          "mean": 0.004792449148821965,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 9,
+          "mean": 0.004877810838495637,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 10,
+          "mean": 0.004804643675918203,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 11,
+          "mean": 0.004810740939466322,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 12,
+          "mean": 0.004944880737524952,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 13,
+          "mean": 0.005042436954294865,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 14,
+          "mean": 0.004999756109458029,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 15,
+          "mean": 0.004920491683332473,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 16,
+          "mean": 0.004871713574947518,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 17,
+          "mean": 0.004944880737524951,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 18,
+          "mean": 0.004932686210428716,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 19,
+          "mean": 0.0048290327301106824,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 20,
+          "mean": 0.0048778108384956356,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 21,
+          "mean": 0.00487781083849564,
+          "count": 166
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 22,
+          "mean": 0.004763751848529615,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "weekday": 6,
+          "hour": 23,
+          "mean": 0.004860723896336836,
+          "count": 167
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 0,
+          "mean": 0.011545916915635173,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 1,
+          "mean": 0.011612604922464026,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 2,
+          "mean": 0.012947847014748375,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 3,
+          "mean": 0.015723550054535924,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 4,
+          "mean": 0.018546675676957322,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 5,
+          "mean": 0.021123302666729845,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 6,
+          "mean": 0.022668488484216136,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 7,
+          "mean": 0.02319359478983887,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 8,
+          "mean": 0.023288933940342347,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 9,
+          "mean": 0.023407984382162735,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 10,
+          "mean": 0.023433671614422738,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 11,
+          "mean": 0.023165437631400023,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 12,
+          "mean": 0.02243186955628265,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 13,
+          "mean": 0.021124290637201386,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 14,
+          "mean": 0.019339027995131233,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 15,
+          "mean": 0.017197601998071434,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 16,
+          "mean": 0.015808515515088238,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 17,
+          "mean": 0.015535341679707831,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 18,
+          "mean": 0.015257227991969729,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 19,
+          "mean": 0.013962492689018462,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 20,
+          "mean": 0.012799651444017596,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 21,
+          "mean": 0.012151048829452539,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 22,
+          "mean": 0.011755366655601347,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 0,
+          "hour": 23,
+          "mean": 0.011642244036610188,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 0,
+          "mean": 0.011630882376187491,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 1,
+          "mean": 0.011680280899764417,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 2,
+          "mean": 0.012690480706912583,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 3,
+          "mean": 0.015674645516194765,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 4,
+          "mean": 0.018898887150060814,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 5,
+          "mean": 0.02159110668500335,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 6,
+          "mean": 0.0229777232418077,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 7,
+          "mean": 0.023450961097674663,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 8,
+          "mean": 0.023560625820015446,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 9,
+          "mean": 0.023751304121022384,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 10,
+          "mean": 0.02372808681494123,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 11,
+          "mean": 0.023525552868275824,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 12,
+          "mean": 0.022793466748865763,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 13,
+          "mean": 0.021571841260808345,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 14,
+          "mean": 0.01985425459603859,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 15,
+          "mean": 0.017624405241776085,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 16,
+          "mean": 0.016183944294272886,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 17,
+          "mean": 0.015882119315217855,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 18,
+          "mean": 0.015574860498569366,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 19,
+          "mean": 0.01410031456979809,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 20,
+          "mean": 0.012832254469578364,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 21,
+          "mean": 0.012170314253647537,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 22,
+          "mean": 0.011715353851504033,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 1,
+          "hour": 23,
+          "mean": 0.011593833483504795,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 0,
+          "mean": 0.011568146251244792,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 1,
+          "mean": 0.011577037985488637,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 2,
+          "mean": 0.012602057349709884,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 3,
+          "mean": 0.015630186844975528,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 4,
+          "mean": 0.018869742021150424,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 5,
+          "mean": 0.02135053587518371,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 6,
+          "mean": 0.022667994498980364,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 7,
+          "mean": 0.02311307519640848,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 8,
+          "mean": 0.023306223423594265,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 9,
+          "mean": 0.023475660359463125,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 10,
+          "mean": 0.02344750320102428,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 11,
+          "mean": 0.02317087146899349,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 12,
+          "mean": 0.022401736456900724,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 13,
+          "mean": 0.02121962978770486,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 14,
+          "mean": 0.01944029496846393,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 15,
+          "mean": 0.017351725391631448,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 16,
+          "mean": 0.0159537471744044,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 17,
+          "mean": 0.01563463271209745,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 18,
+          "mean": 0.01524685430201857,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 19,
+          "mean": 0.013969902467555003,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 20,
+          "mean": 0.012837688307171828,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 21,
+          "mean": 0.012213784954395233,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 22,
+          "mean": 0.01166397938698403,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 2,
+          "hour": 23,
+          "mean": 0.011518253742432094,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 0,
+          "mean": 0.011485650716871324,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 1,
+          "mean": 0.011536531196155563,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 2,
+          "mean": 0.012504248273027567,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 3,
+          "mean": 0.015462231864813974,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 4,
+          "mean": 0.018532844090355775,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 5,
+          "mean": 0.020981528904064066,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 6,
+          "mean": 0.022435327452933036,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 7,
+          "mean": 0.02291399914639347,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 8,
+          "mean": 0.02306565261377463,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 9,
+          "mean": 0.02319359478983887,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 10,
+          "mean": 0.023253860988602725,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 11,
+          "mean": 0.023023663868734237,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 12,
+          "mean": 0.02251090719400574,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 13,
+          "mean": 0.02146267052370334,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 14,
+          "mean": 0.019892785444428584,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 15,
+          "mean": 0.017573030777256082,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 16,
+          "mean": 0.01592015617837209,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 17,
+          "mean": 0.015516570240748593,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 18,
+          "mean": 0.015059633897662019,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 19,
+          "mean": 0.013963974644725768,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 20,
+          "mean": 0.012806567237318362,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 21,
+          "mean": 0.012146602962330612,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 22,
+          "mean": 0.011671389165520572,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 3,
+          "hour": 23,
+          "mean": 0.011520229683375176,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 0,
+          "mean": 0.011517265771960562,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 1,
+          "mean": 0.011541965033749024,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 2,
+          "mean": 0.012485970819304103,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 3,
+          "mean": 0.015460749909106668,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 4,
+          "mean": 0.01853827792794924,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 5,
+          "mean": 0.020891129605918293,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 6,
+          "mean": 0.022287131882202257,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 7,
+          "mean": 0.022898685604084614,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 8,
+          "mean": 0.023074050362782705,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 9,
+          "mean": 0.02325139106242388,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 10,
+          "mean": 0.023180257188473104,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 11,
+          "mean": 0.022806804350231528,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 12,
+          "mean": 0.021766965428937215,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 13,
+          "mean": 0.02038800705467367,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 14,
+          "mean": 0.01884392776411551,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 15,
+          "mean": 0.016849740417815482,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 16,
+          "mean": 0.015114886851976005,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 17,
+          "mean": 0.014562436346473856,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 18,
+          "mean": 0.013546960777007675,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 19,
+          "mean": 0.012820130660506199,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 20,
+          "mean": 0.012522542663387683,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 21,
+          "mean": 0.011993442134287154,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 22,
+          "mean": 0.011553270238716197,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 4,
+          "hour": 23,
+          "mean": 0.011413170380306476,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 0,
+          "mean": 0.011378393819708323,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 1,
+          "mean": 0.011359018307375067,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 2,
+          "mean": 0.01132424174677691,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 3,
+          "mean": 0.011284497106093302,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 4,
+          "mean": 0.01129592369028984,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 5,
+          "mean": 0.011729637081749707,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 6,
+          "mean": 0.011998410214372606,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 7,
+          "mean": 0.011968601733859902,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 8,
+          "mean": 0.012026728270859677,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 9,
+          "mean": 0.012025734654842586,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 10,
+          "mean": 0.012048587823235661,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 11,
+          "mean": 0.011951710261569371,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 12,
+          "mean": 0.011796209354894753,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 13,
+          "mean": 0.01177434980251877,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 14,
+          "mean": 0.011718210497553169,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 15,
+          "mean": 0.01171622326551899,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 16,
+          "mean": 0.011700325409245545,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 17,
+          "mean": 0.01166157438457903,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 18,
+          "mean": 0.011602951039570705,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 19,
+          "mean": 0.011580097871177633,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 20,
+          "mean": 0.011536378766425666,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 21,
+          "mean": 0.01155724470278456,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 22,
+          "mean": 0.011476761805400248,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 5,
+          "hour": 23,
+          "mean": 0.01147477457336607,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 0,
+          "mean": 0.011467819261246444,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 1,
+          "mean": 0.011431055468614103,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 2,
+          "mean": 0.011402737412127032,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 3,
+          "mean": 0.011474277765357524,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 4,
+          "mean": 0.011463347989169535,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 5,
+          "mean": 0.011816081675236558,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 6,
+          "mean": 0.012025734654842584,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 7,
+          "mean": 0.011954691109620639,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 8,
+          "mean": 0.011979034702039348,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 9,
+          "mean": 0.011993442134287154,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 10,
+          "mean": 0.01201828253471441,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 11,
+          "mean": 0.01187867948431324,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 12,
+          "mean": 0.011743050897980424,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 13,
+          "mean": 0.011735101969843707,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 14,
+          "mean": 0.011684924360980651,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 15,
+          "mean": 0.011643192488262863,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 16,
+          "mean": 0.011617855279827062,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 17,
+          "mean": 0.011589040415331441,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 18,
+          "mean": 0.01152495218222913,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 19,
+          "mean": 0.01146682564522935,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 20,
+          "mean": 0.011430558660605557,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 21,
+          "mean": 0.011536378766425664,
+          "count": 175
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 22,
+          "mean": 0.01146786724838363,
+          "count": 176
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "weekday": 6,
+          "hour": 23,
+          "mean": 0.01146687927791209,
+          "count": 176
+        }
+      ]
+    },
+    {
+      "keys": [
+        "building_use",
+        "hour"
+      ],
+      "groups": [
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 0,
+          "mean": 2.347353816196999,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 1,
+          "mean": 2.3467431975385282,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 2,
+          "mean": 2.363162054799632,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 3,
+          "mean": 2.3784614445202066,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 4,
+          "mean": 3.149231807804385,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 5,
+          "mean": 3.494163503322783,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 6,
+          "mean": 3.795639504313342,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 7,
+          "mean": 3.715241380948019,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 8,
+          "mean": 3.855276593290658,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 9,
+          "mean": 4.096369193610215,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 10,
+          "mean": 3.8206748693106456,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 11,
+          "mean": 3.53835075525024,
+          "count": 292
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 12,
+          "mean": 4.206581562969073,
+          "count": 292
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 13,
+          "mean": 3.779733329727244,
+          "count": 292
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 14,
+          "mean": 3.1323276852966235,
+          "count": 292
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 15,
+          "mean": 3.094751054165267,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 16,
+          "mean": 2.540377158791382,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 17,
+          "mean": 2.567413996058117,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 18,
+          "mean": 2.5361028281820865,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 19,
+          "mean": 2.424698846269968,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 20,
+          "mean": 2.3436901042461744,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 21,
+          "mean": 2.3396193131897025,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 22,
+          "mean": 2.9930830475298777,
+          "count": 291
+        },
+        {
+          "building_use": "INSTITUTIONAL (EDUCATION)",
+          "hour": 23,
+          "mean": 2.5599169558624477,
+          "count": 291
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 0,
+          "mean": 0.0047487660140868035,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 1,
+          "mean": 0.004835422328212476,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 2,
+          "mean": 0.004840621707060019,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 3,
+          "mean": 0.0058614330874604366,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 4,
+          "mean": 0.008682096112251072,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 5,
+          "mean": 0.010533941545116696,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 6,
+          "mean": 0.010968089678886319,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 7,
+          "mean": 0.011453365037990082,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 8,
+          "mean": 0.011754929011147422,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 9,
+          "mean": 0.01197243635960286,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 10,
+          "mean": 0.0119195760079862,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 11,
+          "mean": 0.011793924352503976,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 12,
+          "mean": 0.011864982530087026,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 13,
+          "mean": 0.011284385225445016,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 14,
+          "mean": 0.008404795907048922,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 15,
+          "mean": 0.0062964477843713085,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 16,
+          "mean": 0.0058700987188730035,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 17,
+          "mean": 0.005383090233486725,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 18,
+          "mean": 0.005046863734679117,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 19,
+          "mean": 0.004922945205479406,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 20,
+          "mean": 0.004901281126947987,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 21,
+          "mean": 0.0048891492429703936,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 22,
+          "mean": 0.0047868947923021005,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (KINDERGARTEN)",
+          "hour": 23,
+          "mean": 0.004818091065387342,
+          "count": 1168
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 0,
+          "mean": 0.011513586184375096,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 1,
+          "mean": 0.011534296615788225,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 2,
+          "mean": 0.012281144459853522,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 3,
+          "mean": 0.01439205341453514,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 4,
+          "mean": 0.016600718432849382,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 5,
+          "mean": 0.018508552065176317,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 6,
+          "mean": 0.019592421537152203,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 7,
+          "mean": 0.019940611247531312,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 8,
+          "mean": 0.020056109011794294,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 9,
+          "mean": 0.02017026377879841,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 10,
+          "mean": 0.02017181882825605,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 11,
+          "mean": 0.019944852291506696,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 12,
+          "mean": 0.01936149669269249,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 13,
+          "mean": 0.01847734691911219,
+          "count": 1229
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 14,
+          "mean": 0.017261086938713265,
+          "count": 1229
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 15,
+          "mean": 0.01571361488199097,
+          "count": 1229
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 16,
+          "mean": 0.014618605969259341,
+          "count": 1229
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 17,
+          "mean": 0.014344482347782815,
+          "count": 1229
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 18,
+          "mean": 0.013977616515272562,
+          "count": 1229
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 19,
+          "mean": 0.01312624160315129,
+          "count": 1229
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 20,
+          "mean": 0.01239647146659599,
+          "count": 1229
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 21,
+          "mean": 0.011967636010237107,
+          "count": 1229
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 22,
+          "mean": 0.01161501781945305,
+          "count": 1230
+        },
+        {
+          "building_use": "PUBLIC BUILDING (OFFICE)",
+          "hour": 23,
+          "mean": 0.0115186047530793,
+          "count": 1230
+        }
+      ]
+    },
+    {
+      "keys": [
+        "weekday",
+        "hour"
+      ],
+      "groups": [
+        {
+          "weekday": 0,
+          "hour": 0,
+          "mean": 0.25704609064192446,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 1,
+          "mean": 0.25703775740324325,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 2,
+          "mean": 0.26084733419950096,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 3,
+          "mean": 0.2699370522152488,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 4,
+          "mean": 0.39204014128059356,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 5,
+          "mean": 0.45507486488991805,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 6,
+          "mean": 0.5098127057157926,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 7,
+          "mean": 0.5352476249068023,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 8,
+          "mean": 0.5308698103084204,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 9,
+          "mean": 0.5525787413783616,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 10,
+          "mean": 0.5148658146432324,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 11,
+          "mean": 0.47120266108364,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 12,
+          "mean": 0.5881254329437827,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 13,
+          "mean": 0.5262123418192859,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 14,
+          "mean": 0.4020203509892653,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 15,
+          "mean": 0.3923042472990504,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 16,
+          "mean": 0.318803701080922,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 17,
+          "mean": 0.3181371567005838,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 18,
+          "mean": 0.30685443692344827,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 19,
+          "mean": 0.28856064379788454,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 20,
+          "mean": 0.28233815585767996,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 21,
+          "mean": 0.2766978710471763,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 22,
+          "mean": 0.3442932365617713,
+          "count": 385
+        },
+        {
+          "weekday": 0,
+          "hour": 23,
+          "mean": 0.29427176537273075,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 0,
+          "mean": 0.2701182928776961,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 1,
+          "mean": 0.27140580486174737,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 2,
+          "mean": 0.2700089843631267,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 3,
+          "mean": 0.27987646474529737,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 4,
+          "mean": 0.4101943322295814,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 5,
+          "mean": 0.4729584023445562,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 6,
+          "mean": 0.5206238103702278,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 7,
+          "mean": 0.5183074904332847,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 8,
+          "mean": 0.5307334426209851,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 9,
+          "mean": 0.5706978002488479,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 10,
+          "mean": 0.5402312965892047,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 11,
+          "mean": 0.47238946662663933,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 12,
+          "mean": 0.6065685236479246,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 13,
+          "mean": 0.523604279103996,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 14,
+          "mean": 0.4258662884351516,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 15,
+          "mean": 0.40194428453607184,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 16,
+          "mean": 0.31436259543338474,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 17,
+          "mean": 0.3184738708919539,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 18,
+          "mean": 0.30990755490632427,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 19,
+          "mean": 0.2848623524898542,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 20,
+          "mean": 0.2663834812796018,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 21,
+          "mean": 0.266172278222641,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 22,
+          "mean": 0.3313257442494826,
+          "count": 385
+        },
+        {
+          "weekday": 1,
+          "hour": 23,
+          "mean": 0.2851432271357722,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 0,
+          "mean": 0.263456559855523,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 1,
+          "mean": 0.26263616205319207,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 2,
+          "mean": 0.2665945060642996,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 3,
+          "mean": 0.2729035853614624,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 4,
+          "mean": 0.4075097671660735,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 5,
+          "mean": 0.4606934729115468,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 6,
+          "mean": 0.5173665847489535,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 7,
+          "mean": 0.4953414786574933,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 8,
+          "mean": 0.5323996659084792,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 9,
+          "mean": 0.5854921495394457,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 10,
+          "mean": 0.5309500510122593,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 11,
+          "mean": 0.4834711640322953,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 12,
+          "mean": 0.5887973673854455,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 13,
+          "mean": 0.5355036476261391,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 14,
+          "mean": 0.42637464020269605,
+          "count": 385
+        },
+        {
+          "weekday": 2,
+          "hour": 15,
+          "mean": 0.40536630095559684,
+          "count": 384
+        },
+        {
+          "weekday": 2,
+          "hour": 16,
+          "mean": 0.3109876366849385,
+          "count": 384
+        },
+        {
+          "weekday": 2,
+          "hour": 17,
+          "mean": 0.30721080207318235,
+          "count": 384
+        },
+        {
+          "weekday": 2,
+          "hour": 18,
+          "mean": 0.3076046243685972,
+          "count": 384
+        },
+        {
+          "weekday": 2,
+          "hour": 19,
+          "mean": 0.2810119872876298,
+          "count": 384
+        },
+        {
+          "weekday": 2,
+          "hour": 20,
+          "mean": 0.2667085805195887,
+          "count": 384
+        },
+        {
+          "weekday": 2,
+          "hour": 21,
+          "mean": 0.2684488938118671,
+          "count": 384
+        },
+        {
+          "weekday": 2,
+          "hour": 22,
+          "mean": 0.342468448780956,
+          "count": 384
+        },
+        {
+          "weekday": 2,
+          "hour": 23,
+          "mean": 0.2933432142286284,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 0,
+          "mean": 0.27228114432530776,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 1,
+          "mean": 0.2704871077690985,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 2,
+          "mean": 0.274323380252245,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 3,
+          "mean": 0.26984993059081414,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 4,
+          "mean": 0.3921266687964711,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 5,
+          "mean": 0.4474926723494974,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 6,
+          "mean": 0.5056717762109753,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 7,
+          "mean": 0.47821730018940695,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 8,
+          "mean": 0.5005580007253206,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 9,
+          "mean": 0.560042383999665,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 10,
+          "mean": 0.5344561579493594,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 11,
+          "mean": 0.49798252271963434,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 12,
+          "mean": 0.575350452463806,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 13,
+          "mean": 0.5260898633925416,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 14,
+          "mean": 0.4239727065984967,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 15,
+          "mean": 0.41539211682704597,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 16,
+          "mean": 0.31525351023286563,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 17,
+          "mean": 0.3231796667148905,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 18,
+          "mean": 0.30115058563553143,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 19,
+          "mean": 0.27677873156858046,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 20,
+          "mean": 0.26045003738847466,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 21,
+          "mean": 0.25626836165474415,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 22,
+          "mean": 0.32881655749204913,
+          "count": 384
+        },
+        {
+          "weekday": 3,
+          "hour": 23,
+          "mean": 0.2829846939528666,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 0,
+          "mean": 0.2590404391313312,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 1,
+          "mean": 0.2614597038838642,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 2,
+          "mean": 0.2608475753241527,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 3,
+          "mean": 0.26672348325939277,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 4,
+          "mean": 0.3821289536456116,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 5,
+          "mean": 0.44725020068114024,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 6,
+          "mean": 0.48097743221123945,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 7,
+          "mean": 0.4805879309963257,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 8,
+          "mean": 0.5411618176956222,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 9,
+          "mean": 0.5596324974680239,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 10,
+          "mean": 0.5091110747146467,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 11,
+          "mean": 0.4929907683425245,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 12,
+          "mean": 0.5661608042073053,
+          "count": 384
+        },
+        {
+          "weekday": 4,
+          "hour": 13,
+          "mean": 0.47873510303833555,
+          "count": 383
+        },
+        {
+          "weekday": 4,
+          "hour": 14,
+          "mean": 0.397968995647702,
+          "count": 383
+        },
+        {
+          "weekday": 4,
+          "hour": 15,
+          "mean": 0.3966115060501923,
+          "count": 383
+        },
+        {
+          "weekday": 4,
+          "hour": 16,
+          "mean": 0.3104303431816962,
+          "count": 383
+        },
+        {
+          "weekday": 4,
+          "hour": 17,
+          "mean": 0.29632845030877825,
+          "count": 383
+        },
+        {
+          "weekday": 4,
+          "hour": 18,
+          "mean": 0.2814723877540387,
+          "count": 383
+        },
+        {
+          "weekday": 4,
+          "hour": 19,
+          "mean": 0.2641402781349855,
+          "count": 383
+        },
+        {
+          "weekday": 4,
+          "hour": 20,
+          "mean": 0.2543870872347817,
+          "count": 383
+        },
+        {
+          "weekday": 4,
+          "hour": 21,
+          "mean": 0.25366089924778024,
+          "count": 383
+        },
+        {
+          "weekday": 4,
+          "hour": 22,
+          "mean": 0.3249452780646596,
+          "count": 383
+        },
+        {
+          "weekday": 4,
+          "hour": 23,
+          "mean": 0.27319857586363894,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 0,
+          "mean": 0.25015475321913455,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 1,
+          "mean": 0.25018753083831874,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 2,
+          "mean": 0.2502899430066193,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 3,
+          "mean": 0.248792712720148,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 4,
+          "mean": 0.2351856548835962,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 5,
+          "mean": 0.22063413715561184,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 6,
+          "mean": 0.21487505264278584,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 7,
+          "mean": 0.19973040942974563,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 8,
+          "mean": 0.1899811566744353,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 9,
+          "mean": 0.18443847952538492,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 10,
+          "mean": 0.17955308760003874,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 11,
+          "mean": 0.18470356738542948,
+          "count": 384
+        },
+        {
+          "weekday": 5,
+          "hour": 12,
+          "mean": 0.1835773938494564,
+          "count": 384
+        },
+        {
+          "weekday": 5,
+          "hour": 13,
+          "mean": 0.18784541494610477,
+          "count": 384
+        },
+        {
+          "weekday": 5,
+          "hour": 14,
+          "mean": 0.1926726202896273,
+          "count": 384
+        },
+        {
+          "weekday": 5,
+          "hour": 15,
+          "mean": 0.2011999881413684,
+          "count": 384
+        },
+        {
+          "weekday": 5,
+          "hour": 16,
+          "mean": 0.20837238392848756,
+          "count": 384
+        },
+        {
+          "weekday": 5,
+          "hour": 17,
+          "mean": 0.22078659603960382,
+          "count": 384
+        },
+        {
+          "weekday": 5,
+          "hour": 18,
+          "mean": 0.23559374010156628,
+          "count": 384
+        },
+        {
+          "weekday": 5,
+          "hour": 19,
+          "mean": 0.2481720779430693,
+          "count": 384
+        },
+        {
+          "weekday": 5,
+          "hour": 20,
+          "mean": 0.24957924367892947,
+          "count": 384
+        },
+        {
+          "weekday": 5,
+          "hour": 21,
+          "mean": 0.2500587442428535,
+          "count": 384
+        },
+        {
+          "weekday": 5,
+          "hour": 22,
+          "mean": 0.3212397572836612,
+          "count": 383
+        },
+        {
+          "weekday": 5,
+          "hour": 23,
+          "mean": 0.2818942623771321,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 0,
+          "mean": 0.25734310311972153,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 1,
+          "mean": 0.2560891246792933,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 2,
+          "mean": 0.2612390318326893,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 3,
+          "mean": 0.2574485003058554,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 4,
+          "mean": 0.24502410053278653,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 5,
+          "mean": 0.232707074415694,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 6,
+          "mean": 0.220276417684169,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 7,
+          "mean": 0.2037508610410633,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 8,
+          "mean": 0.1927152553121989,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 9,
+          "mean": 0.18894419638520513,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 10,
+          "mean": 0.18387201448428017,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 11,
+          "mean": 0.18440368545844082,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 12,
+          "mean": 0.18411633259274393,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 13,
+          "mean": 0.18724793433424067,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 14,
+          "mean": 0.1920779061597331,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 15,
+          "mean": 0.2013548851583272,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 16,
+          "mean": 0.21127115876392114,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 17,
+          "mean": 0.22348108633376704,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 18,
+          "mean": 0.23914324369586482,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 19,
+          "mean": 0.2507734233092203,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 20,
+          "mean": 0.250700669885583,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 21,
+          "mean": 0.25476985728814666,
+          "count": 383
+        },
+        {
+          "weekday": 6,
+          "hour": 22,
+          "mean": 0.32594574884923894,
+          "count": 385
+        },
+        {
+          "weekday": 6,
+          "hour": 23,
+          "mean": 0.279859746657011,
+          "count": 385
+        }
+      ]
+    }
+  ],
+  "fit_buildings": [
+    "L03_B01",
+    "L14_B04",
+    "L14_B05"
+  ]
+}

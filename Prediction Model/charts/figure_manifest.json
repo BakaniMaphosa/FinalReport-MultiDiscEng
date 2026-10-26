@@ -1,0 +1,220 @@
+{
+  "created_utc": "2026-10-26T03:01:22.840174+00:00",
+  "source_experiment": "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/validation/run_20261025T091525_455049Z",
+  "selected_candidate": {
+    "selected_utc": "2026-10-25T09:15:42.744194+00:00",
+    "candidate": "candidate_2",
+    "settings": {
+      "loss": "squared_error",
+      "learning_rate": 0.08,
+      "max_iter": 200,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 60,
+      "l2_regularization": 1.0,
+      "max_bins": 255,
+      "categorical_features": null,
+      "early_stopping": false,
+      "random_state": 42
+    },
+    "selection_rule": "Minimise (equal-weight validation-building RMSE of A + equal-weight validation-building RMSE of B) / 2. Choose one shared configuration. Exact numerical ties: fewer max_leaf_nodes, then larger min_samples_leaf. Only the three predefined candidates; no test performance is consulted.",
+    "scores": [
+      {
+        "candidate": "candidate_1",
+        "A_validation_macro_rmse": 0.3026657829225682,
+        "B_validation_macro_rmse": 0.2982529377103225,
+        "selection_score": 0.3004593603164454,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 30,
+        "selected": false
+      },
+      {
+        "candidate": "candidate_2",
+        "A_validation_macro_rmse": 0.30208307873532664,
+        "B_validation_macro_rmse": 0.2939204220054661,
+        "selection_score": 0.29800175037039633,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 60,
+        "selected": true
+      },
+      {
+        "candidate": "candidate_3",
+        "A_validation_macro_rmse": 0.3283577720736382,
+        "B_validation_macro_rmse": 0.3112571861971157,
+        "selection_score": 0.31980747913537694,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 120,
+        "selected": false
+      }
+    ],
+    "test_data_loaded": false,
+    "candidate_plan_sha256": "03a743063a3041f41c692b848911ac520a06356ea50e387a191634993262ff28"
+  },
+  "command": "PYTHONDONTWRITEBYTECODE=1 '/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/.venv/bin/python' -B '/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/generate_report_figures.py' --output-dir '/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/charts'",
+  "no_retraining": true,
+  "colors": {
+    "A": "#0072B2",
+    "B": "#D55E00",
+    "baseline_mean": "#666666",
+    "baseline_calendar_use": "#8C6BB1"
+  },
+  "partition_colors": {
+    "fit": "#5B8DB8",
+    "validation": "#E6AD4F",
+    "test": "#5E9F83"
+  },
+  "versions": {
+    "python": "3.11.1",
+    "numpy": "1.26.4",
+    "pandas": "1.5.3",
+    "matplotlib": "3.9.4"
+  },
+  "source_sha256": {
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/validation/run_20261025T091525_455049Z/run_manifest.json": "92921e0dabd08c65215c0f0e654a31ee4e32d931ab95724b83bf20ac3d79b8ec",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/validation/run_20261025T091525_455049Z/selected_settings.json": "f039bb1543a4c2a4e144d1a38edbb7528100048f302bd50884db2b65673afa29",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/validation/run_20261025T091525_455049Z/candidate_plan.json": "03a743063a3041f41c692b848911ac520a06356ea50e387a191634993262ff28",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/validation/run_20261025T091525_455049Z/selection_scores.csv": "86079165ed0f490adb0816178de26031ca09936f708d1c9d7354f7e3fb2bbe5c",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/validation/run_20261025T091525_455049Z/split_boundaries.csv": "b0ec21c9e3e84d26e9807516449e817a763c4d3fd21f23376988b9468b844c28",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/validation/run_20261025T091525_455049Z/validation/all_candidate_metrics.csv": "9a0facdd6c0b2ade1412cb8b4644a1f5de4630b158ec2ef8b77a4a883298debe",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/validation/run_20261025T091525_455049Z/final/results/test_predictions.csv": "58269f110ceb989f4d56bbd092228fd38aed512264e45c1a475625ff7ff97566",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/validation/run_20261025T091525_455049Z/final/results/metrics.csv": "55061a886d5ff3e7b2202d7c2f7e95b67b8a2e251d30531d5cb0dd411a136650",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/validation/run_20261025T091525_455049Z/validation/candidate_1/results/validation_predictions.csv": "1d542e174ef6a25dabe4ef2ab0fd094563b795cf234c4ae07853c7343d4e6fb5",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/validation/run_20261025T091525_455049Z/validation/candidate_2/results/validation_predictions.csv": "db7b9420b96e6e6abbf1ab3e1df14dbf46713843bab4d5ae61f1550f778a900c",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/validation/run_20261025T091525_455049Z/validation/candidate_3/results/validation_predictions.csv": "91b8b43182f06cdab439fc494d0f6d5e6c455bf246b751880d4bac485dfb6961",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/results/chart_periods.csv": "af0a87cf8df33acad3e12c1286c62617d894b59add21f0203e32909d2c1ce64a",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/generate_report_figures.py": "62164a2dedd4d8e70da75f3fb53f7d24895422735bace92f29cc819ed881b09f"
+  },
+  "staged_input_target_hashes": {
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L03_B01_model_input.csv": "a4dd59812bc9c8402fc6d592a03b4386ad076016118989f4ce71f34253ea324c",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L03_B01_targets.csv": "98dc92361664e8d57cc02feefece3a1ca2b5cd3328060104bb7b3060b62fb2c7",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L14_B04_model_input.csv": "bbf6ca1c17894b41ec3d2094b80d146122607cb5299bb63952a49ac996bc0806",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L14_B04_targets.csv": "bbe093eb668350143eb7fe6c89ba387e0e50267925b388f4ececd375912d8460",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L14_B05_model_input.csv": "bea95cc183812d242d494bc540fd0f3608c28fbb18924bc285e7b4c70bdea227",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L14_B05_targets.csv": "9833128d22562485a3234be3fff9b71e884429baad9f721cb4e56133bede49ab",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L07_B01_model_input.csv": "3a7c62261ab7a28e3096701994a109fbd19deb82258500ede9b0939c695c1a94",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L07_B01_targets.csv": "19b4bfde8f85b3afe9c0126055f093b17907f765dc6fe5cba2f30ae3d50562bb",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L14_B01_model_input.csv": "c2b299020d717407d13e0eaeeaf562fd30c15ee9a24890a21c7a2411fb024c58",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L14_B01_targets.csv": "91905b55081cba17451b7192b86af3ede9b8aa59a4793ed1eb7aa606c5b12686",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L14_B02_model_input.csv": "e66d154707881244934a2cafc029d05982e94b583e91e27140bf752840058d93",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L14_B02_targets.csv": "2dc484e0feb49290015f21209733b51fa8f6ff2ab6d49b5a470803fff4f2464d",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L14_B03_model_input.csv": "8e456f64ff83762fb89df55ad1b6f4439ac845db133e3cd7986e90c86a9273c5",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L14_B03_targets.csv": "5a2b568ee315b5c58a92ce417da21078cdd273cd460175b1a9101a3c0507ea74"
+  },
+  "original_chart_windows": [
+    {
+      "building_id": "L07_B01",
+      "start_utc": "2021-12-01T22:00:00+00:00",
+      "end_utc_exclusive": "2021-12-08T22:00:00+00:00",
+      "rows": 168,
+      "selection": "first 168 consecutive hourly rows; independent of prediction errors"
+    },
+    {
+      "building_id": "L14_B01",
+      "start_utc": "2017-12-31T22:00:00+00:00",
+      "end_utc_exclusive": "2018-01-07T22:00:00+00:00",
+      "rows": 168,
+      "selection": "first 168 consecutive hourly rows; independent of prediction errors"
+    },
+    {
+      "building_id": "L14_B02",
+      "start_utc": "2017-12-31T22:00:00+00:00",
+      "end_utc_exclusive": "2018-01-07T22:00:00+00:00",
+      "rows": 168,
+      "selection": "first 168 consecutive hourly rows; independent of prediction errors"
+    },
+    {
+      "building_id": "L14_B03",
+      "start_utc": "2017-12-31T22:00:00+00:00",
+      "end_utc_exclusive": "2018-01-07T22:00:00+00:00",
+      "rows": 168,
+      "selection": "first 168 consecutive hourly rows; independent of prediction errors"
+    }
+  ],
+  "PNGs": [
+    {
+      "file": "figure_1_workflow.png",
+      "width_pixels": 4643,
+      "height_pixels": 1456,
+      "dpi": 320
+    },
+    {
+      "file": "figure_2_data_split.png",
+      "width_pixels": 3371,
+      "height_pixels": 1812,
+      "dpi": 320
+    },
+    {
+      "file": "figure_3_validation_rmse.png",
+      "width_pixels": 2806,
+      "height_pixels": 1556,
+      "dpi": 320
+    },
+    {
+      "file": "figure_4_test_rmse.png",
+      "width_pixels": 3264,
+      "height_pixels": 1779,
+      "dpi": 320
+    },
+    {
+      "file": "figure_5_actual_vs_predicted.png",
+      "width_pixels": 3936,
+      "height_pixels": 2766,
+      "dpi": 320
+    },
+    {
+      "file": "figure_6_weather_contribution.png",
+      "width_pixels": 2812,
+      "height_pixels": 1652,
+      "dpi": 320
+    }
+  ],
+  "output_sha256": {
+    "figure_1_workflow.png": "a5132872e7df8aacb18f77d346341095420c15f792b01c11d9a0deb81e1410ff",
+    "figure_1_workflow.svg": "a7f52db71609768c4c560ca57f8debd7dadd6d1fec9f047f5144bb524f9625c3",
+    "figure_2_data_split.png": "731e9d7af997b4451ec85ba09c7da58660b5c459e706311bfa77c30776c43006",
+    "figure_2_data_split.svg": "f6e17966d42bb65489b56e009a9e9c31dcfc893b73de621e140691ac28ca1f55",
+    "figure_3_validation_rmse.png": "a1073cd829a8a2e68c906dbffdf103df61f4f3f640214657518ba20467da3f71",
+    "figure_3_validation_rmse.svg": "08ff31e7254842ad94f825e0262a0124b5c5012404df65bc0b6b8b794dac1dc5",
+    "figure_4_test_rmse.png": "8dc0935c651aaae114a6934fdd20ad2166f65c8fe70400517ccbb4a6b051ed87",
+    "figure_4_test_rmse.svg": "2bbb44313bc9b8c51dae869f27e7c248aa202dea06de1d78ea1cd89a5b24dda5",
+    "figure_5_actual_vs_predicted.png": "ccd377de5a62e5db8254c7d398cb63cdac2f27ecb95bbce295e572c68281dd26",
+    "figure_5_actual_vs_predicted.svg": "b38fdc2bcef10188f191f1220a283c0b1b75d1fae3cac798f28312daea07a528",
+    "figure_6_weather_contribution.png": "57b321f0de17ac4acc9c56215719e60072dc969f2ecd6124f1eeeb17d2ecb484",
+    "figure_6_weather_contribution.svg": "a32dee5b1b2929ef6a138c749aaca4770af0592fe61747d2ab1d0d3071116404",
+    "captions.md": "5d175adbe1ec20df33e5c4ae17b930d4f57d12cd18e5e9125a1849ed27e578f9",
+    "figure_2_plot_data.csv": "6df2846604f00f57cac9ca5f6fbb98c9e5d627c409734c3fb983350be0464cc2",
+    "figure_3_plot_data.csv": "d500b12ee984b850dc6a990b001f5b00d71f5cc411ea9852e256a7213b301237",
+    "figure_4_plot_data.csv": "cf641fde659af9f8e3e1571f9d5d679b7f6c1565800e2eef69da0e0ff34c0a66",
+    "figure_5_plot_data.csv": "f93426f2558562f83078f7cb1a7158a6844a05b7fb948faec292f204cdbcdd19",
+    "figure_6_plot_data.csv": "3ba2e79ee7a1db0e03791e1c8eb62e3894a66009a29ef2019632957eaa6ce724"
+  },
+  "verification": {
+    "validation_model_building_rmse_checks": 18,
+    "validation_macro_rmse_checks": 6,
+    "test_building_method_rmse_checks": 16,
+    "original_weekly_rows": 672,
+    "all_input_target_pairs_aligned": true,
+    "split_boundaries_verified": true,
+    "same_rows_all_validation_candidates": true,
+    "shared_winner_reproduced": true,
+    "original_weekly_windows_verified": true,
+    "source_files_unchanged": true,
+    "render_stage_existing_files_checked": 295,
+    "all_six_figures_visually_reviewed": true,
+    "historical_files_unchanged": 216,
+    "original_experiments_source_data_and_fitted_models_unchanged": true
+  },
+  "limitations": [
+    "Previously inspected tests; validation does not guarantee transfer",
+    "Exact-t historical reanalysis weather availability at prediction time is assumed",
+    "L03 scale unresolved and retained; no rescaling or extra target shift",
+    "Negative predictions retained; Figure 5 has independent y scales and an actual-only L14_B03 inset"
+  ],
+  "user_removed_original_charts": [
+    "Prediction Model/charts/L14_B01_first_seven_days.png",
+    "Prediction Model/charts/L07_B01_first_seven_days.png",
+    "Prediction Model/charts/L14_B03_first_seven_days.png",
+    "Prediction Model/charts/L14_B02_first_seven_days.png",
+    "Prediction Model/charts/rmse_by_test_location.png",
+    "Prediction Model/charts/mae_by_test_location.png"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "within_building_timestamp_and_row_overlap": 0,
+  "split_union_covers_all_development_rows": true,
+  "input_target_alignment_verified": true,
+  "fitting_rows": 64531,
+  "validation_rows": 16134,
+  "full_development_rows": 80665,
+  "test_rows": 118887,
+  "validation_metric_rows": 48,
+  "final_test_metric_rows": 28,
+  "training_only_preprocessing_and_baseline_statistics_verified": true,
+  "saved_estimators_reproduce_predictions": true,
+  "saved_predictions_reproduce_metrics_and_comparisons": true,
+  "same_validation_rows_all_candidates_and_methods": true,
+  "same_original_test_rows_all_methods": true,
+  "test_loaded_only_after_selection_and_full_refit": true,
+  "preregistration_unchanged": true,
+  "previous_project_files_unchanged": true,
+  "preserved_file_count": 223,
+  "chart_count": 3
+}

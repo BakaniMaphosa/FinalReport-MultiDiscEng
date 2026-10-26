@@ -1,0 +1,63 @@
+Training buildings: L03_B01, L14_B04, L14_B05 (80,665 rows)
+Test buildings: L07_B01, L14_B01, L14_B02, L14_B03 (118,887 rows)
+Excluded buildings: none
+L07: unseen location. L14: unseen buildings at a partly seen location. L03: training.
+Calendar features: UTC. Models use identical rows/settings; no tuning or random early stopping.
+Reference baseline: training-set mean = 0.3531353608 kWh/m², fitted only on 80,665 training rows.
+The baseline uses no predictive features and no held-out targets for fitting.
+Existing weather is joined by exact interval_start_utc, without shifting. Weather labelled at prediction time is assumed available then. These are historical/reanalysis data; publication latency and aggregation timing are not established. Results are conditional on this availability assumption.
+
+                 scope        name         model  n_rows  mae_kwh_per_m2  rmse_kwh_per_m2
+              location         L07 baseline_mean    9543        0.244410         0.246401
+              location         L07             A    9543        0.099096         0.107146
+              location         L07             B    9543        0.110743         0.131937
+              location         L14 baseline_mean  109344        0.343199         0.343281
+              location         L14             A  109344        1.098359         2.001080
+              location         L14             B  109344        1.099939         2.035559
+              building     L07_B01 baseline_mean    9543        0.244410         0.246401
+              building     L07_B01             A    9543        0.099096         0.107146
+              building     L07_B01             B    9543        0.110743         0.131937
+              building     L14_B01 baseline_mean   36360        0.343425         0.343511
+              building     L14_B01             A   36360        0.040771         0.059323
+              building     L14_B01             B   36360        0.014737         0.021664
+              building     L14_B02 baseline_mean   36336        0.338407         0.338482
+              building     L14_B02             A   36336        0.044909         0.063958
+              building     L14_B02             B   36336        0.015344         0.022243
+              building     L14_B03 baseline_mean   36648        0.347726         0.347750
+              building     L14_B03             A   36648        3.192118         3.455410
+              building     L14_B03             B   36648        3.251975         3.515921
+equal_weight_locations L07_and_L14 baseline_mean  118887        0.293805         0.294841
+equal_weight_locations L07_and_L14             A  118887        0.598728         1.054113
+equal_weight_locations L07_and_L14             B  118887        0.605341         1.083748
+
+                 scope        name  mae_reduction_pct                                        mae_note  rmse_reduction_pct                                       rmse_note
+              location         L07         -11.752973 positive = Model B improves; negative = worsens          -23.137208 positive = Model B improves; negative = worsens
+              location         L14          -0.143859 positive = Model B improves; negative = worsens           -1.723004 positive = Model B improves; negative = worsens
+              building     L07_B01         -11.752973 positive = Model B improves; negative = worsens          -23.137208 positive = Model B improves; negative = worsens
+              building     L14_B01          63.854501 positive = Model B improves; negative = worsens           63.482057 positive = Model B improves; negative = worsens
+              building     L14_B02          65.833264 positive = Model B improves; negative = worsens           65.223082 positive = Model B improves; negative = worsens
+              building     L14_B03          -1.875155 positive = Model B improves; negative = worsens           -1.751214 positive = Model B improves; negative = worsens
+equal_weight_locations L07_and_L14          -1.104579 positive = Model B improves; negative = worsens           -2.811337 positive = Model B improves; negative = worsens
+
+Model comparisons against the training-mean baseline (positive reduction = improvement):
+                 scope        name model  mae_reduction_pct  rmse_reduction_pct mae_comparison rmse_comparison
+              location         L07     A          59.454945           56.515392         better          better
+              location         L07     B          54.689695           46.454268         better          better
+              location         L14     A        -220.035667         -482.927352          worse           worse
+              location         L14     B        -220.496067         -492.971213          worse           worse
+              building     L07_B01     A          59.454945           56.515392         better          better
+              building     L07_B01     B          54.689695           46.454268         better          better
+              building     L14_B01     A          88.128113           82.730388         better          better
+              building     L14_B01     B          95.708847           93.693493         better          better
+              building     L14_B02     A          86.729365           81.104397         better          better
+              building     L14_B02     B          95.465857           93.428692         better          better
+              building     L14_B03     A        -817.998938         -893.648947          worse           worse
+              building     L14_B03     B        -835.212838         -911.049868          worse           worse
+equal_weight_locations L07_and_L14     A        -103.784301         -257.519358          worse           worse
+equal_weight_locations L07_and_L14     B        -106.035260         -267.570433          worse           worse
+
+Units: MAE/RMSE in kWh/m². Equal-weight results average the two location metrics separately.
+Error reduction: 100*(A-B)/A; positive improves, negative worsens; blank if A=0.
+Baseline error reduction: 100*(baseline-model)/baseline; positive beats baseline, negative is worse; blank if baseline error=0.
+Predictive improvement does not establish causation.
+Exact input and encoded feature lists: predictors.csv and run_manifest.json.

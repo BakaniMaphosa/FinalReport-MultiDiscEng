@@ -1,0 +1,1 @@
+PYTHONDONTWRITEBYTECODE=1 '/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/.venv/bin/python' -B '/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/run_validation_experiment.py' --threads 4

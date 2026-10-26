@@ -1,0 +1,5 @@
+building_id,start_utc,end_utc_exclusive,rows,selection
+L07_B01,2021-12-01T22:00:00+00:00,2021-12-08T22:00:00+00:00,168,first 168 consecutive hourly rows; independent of prediction errors
+L14_B01,2017-12-31T22:00:00+00:00,2018-01-07T22:00:00+00:00,168,first 168 consecutive hourly rows; independent of prediction errors
+L14_B02,2017-12-31T22:00:00+00:00,2018-01-07T22:00:00+00:00,168,first 168 consecutive hourly rows; independent of prediction errors
+L14_B03,2017-12-31T22:00:00+00:00,2018-01-07T22:00:00+00:00,168,first 168 consecutive hourly rows; independent of prediction errors

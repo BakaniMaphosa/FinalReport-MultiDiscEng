@@ -1,0 +1,8 @@
+scope,name,mae_reduction_pct,mae_note,rmse_reduction_pct,rmse_note
+location,L07,-11.752973340075043,positive = Model B improves; negative = worsens,-23.13720836975591,positive = Model B improves; negative = worsens
+location,L14,-0.14385874791795145,positive = Model B improves; negative = worsens,-1.723003921723882,positive = Model B improves; negative = worsens
+building,L07_B01,-11.752973340075043,positive = Model B improves; negative = worsens,-23.13720836975591,positive = Model B improves; negative = worsens
+building,L14_B01,63.85450059547644,positive = Model B improves; negative = worsens,63.48205705078841,positive = Model B improves; negative = worsens
+building,L14_B02,65.83326447315441,positive = Model B improves; negative = worsens,65.22308208463967,positive = Model B improves; negative = worsens
+building,L14_B03,-1.8751547031667746,positive = Model B improves; negative = worsens,-1.7512142249147478,positive = Model B improves; negative = worsens
+equal_weight_locations,L07_and_L14,-1.1045793711404026,positive = Model B improves; negative = worsens,-2.811337169544097,positive = Model B improves; negative = worsens

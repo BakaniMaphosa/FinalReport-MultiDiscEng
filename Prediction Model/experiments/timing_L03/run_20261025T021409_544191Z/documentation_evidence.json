@@ -1,0 +1,46 @@
+{
+  "evidence": [
+    {
+      "source": "ADRENALIN_data_description.pdf",
+      "pages": "5",
+      "finding": "Timestamps are ISO 8601 UTC; the generic moment-in-time description does not define the hourly interval labelling or availability of each selected weather quantity."
+    },
+    {
+      "source": "ADRENALIN_data_description.pdf",
+      "pages": "8",
+      "finding": "Weather comes from CERRA, ERA5-Land and ERA5; coordinates and station identities are anonymised. Per-variable product mapping, interval/averaging semantics and publication latency are not specified."
+    },
+    {
+      "source": "ADRENALIN_data_description.pdf",
+      "pages": "16, 19-20",
+      "finding": "Dataset harmonisation/resampling and gaps, possible unit mislabelling and different accumulation/measurement strategies are documented. There is no authoritative L03-specific divide-by-1000 instruction."
+    },
+    {
+      "source": "Data_cleaning/build_consumption_tables.py",
+      "pages": null,
+      "finding": "L03/L14 source timestamps are treated as interval ends by project convention; values are used directly. L07 uses already processed counter differences and their existing interval bounds."
+    },
+    {
+      "source": "Data_cleaning/convert_cumulative_to_hourly.py",
+      "pages": null,
+      "finding": "L07 counter differences are assigned to the preceding/current counter timestamps; invalid intervals/gaps remain exclusions."
+    },
+    {
+      "source": "Data_cleaning/join_weather_data.py",
+      "pages": null,
+      "finding": "Original weather uses exact interval_start_utc equality; no availability metadata or publication-latency check is implemented."
+    },
+    {
+      "source": "Data_cleaning/export_prediction_targets.py",
+      "pages": null,
+      "finding": "Targets are exported sequentially in their input row order and verified row by row; no target shift is performed."
+    },
+    {
+      "source": "Data/BuildingsByLocation/L03/L03_B01/L03_B01-topology.txt",
+      "pages": null,
+      "finding": "Selected L03 EM02 is electricity use; EM01 is the separate virtual aggregate described in the building-info note. These must not be conflated."
+    }
+  ],
+  "timing_limitation": "Intended prediction at t is consumption over [t,t+1h). Current electricity interval conventions are retained, without shifting targets. The dataset documents historical reanalysis weather but not its per-variable interval semantics or availability at t. Current alignment is an assumed conditional comparison, not established operational information at t. Exact t-1h weather reduces contemporaneous dependence but does not establish publication latency.",
+  "review_method": "Local PDF read with macOS PDFKit; preparation code, metadata and saved outputs inspected before implementation"
+}

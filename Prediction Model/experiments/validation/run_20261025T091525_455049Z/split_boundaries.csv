@@ -1,0 +1,4 @@
+building_id,total_rows,unique_timestamps,fit_unique_timestamps,validation_unique_timestamps,validation_start_utc,within_building_timestamp_overlap,within_building_row_overlap,fit_rows,fit_eligible_rows,fit_first_utc,fit_last_utc,validation_rows,validation_eligible_rows,validation_first_utc,validation_last_utc
+L03_B01,8736,8736,6988,1748,2022-10-19T15:00:00+00:00,0,0,6988,6988,2022-01-01T11:00:00+00:00,2022-10-19T14:00:00+00:00,1748,1748,2022-10-19T15:00:00+00:00,2022-12-31T10:00:00+00:00
+L14_B04,36889,36889,29511,7378,2021-05-14T13:00:00+00:00,0,0,29511,29511,2017-12-31T22:00:00+00:00,2021-05-14T12:00:00+00:00,7378,7378,2021-05-14T13:00:00+00:00,2022-03-17T22:00:00+00:00
+L14_B05,35040,35040,28032,7008,2021-03-13T22:00:00+00:00,0,0,28032,28032,2017-12-31T22:00:00+00:00,2021-03-13T21:00:00+00:00,7008,7008,2021-03-13T22:00:00+00:00,2021-12-31T21:00:00+00:00

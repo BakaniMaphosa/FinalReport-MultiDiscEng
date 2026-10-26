@@ -1,0 +1,159 @@
+{
+  "input_predictors": {
+    "A": [
+      "floor_area_m2",
+      "heated_area_m2",
+      "year_opened",
+      "number_of_floors",
+      "ventilation_system_count",
+      "ventilation_used_for_heating",
+      "ventilation_used_for_cooling",
+      "has_direct_electric_heating",
+      "has_district_heating",
+      "has_district_cooling",
+      "has_heat_pump",
+      "has_solar_pv",
+      "hour_sin",
+      "hour_cos",
+      "weekday_sin",
+      "weekday_cos",
+      "annual_sin",
+      "annual_cos",
+      "is_weekend",
+      "calendar_year",
+      "building_use",
+      "climate_zone"
+    ],
+    "B": [
+      "floor_area_m2",
+      "heated_area_m2",
+      "year_opened",
+      "number_of_floors",
+      "ventilation_system_count",
+      "ventilation_used_for_heating",
+      "ventilation_used_for_cooling",
+      "has_direct_electric_heating",
+      "has_district_heating",
+      "has_district_cooling",
+      "has_heat_pump",
+      "has_solar_pv",
+      "hour_sin",
+      "hour_cos",
+      "weekday_sin",
+      "weekday_cos",
+      "annual_sin",
+      "annual_cos",
+      "is_weekend",
+      "calendar_year",
+      "building_use",
+      "climate_zone",
+      "temperature_c",
+      "relative_humidity_pct",
+      "wind_speed_kmh",
+      "wind_direction_deg",
+      "direct_solar_radiation_wm2",
+      "diffuse_solar_radiation_wm2"
+    ]
+  },
+  "encoded_predictors": {
+    "A": [
+      "numeric__floor_area_m2",
+      "numeric__heated_area_m2",
+      "numeric__year_opened",
+      "numeric__number_of_floors",
+      "numeric__ventilation_system_count",
+      "numeric__ventilation_used_for_heating",
+      "numeric__ventilation_used_for_cooling",
+      "numeric__has_direct_electric_heating",
+      "numeric__has_district_heating",
+      "numeric__has_district_cooling",
+      "numeric__has_heat_pump",
+      "numeric__has_solar_pv",
+      "numeric__hour_sin",
+      "numeric__hour_cos",
+      "numeric__weekday_sin",
+      "numeric__weekday_cos",
+      "numeric__annual_sin",
+      "numeric__annual_cos",
+      "numeric__is_weekend",
+      "numeric__calendar_year",
+      "numeric__missingindicator_number_of_floors",
+      "categorical__building_use_INSTITUTIONAL (EDUCATION)",
+      "categorical__building_use_PUBLIC BUILDING (KINDERGARTEN)",
+      "categorical__building_use_PUBLIC BUILDING (OFFICE)",
+      "categorical__climate_zone_Cfb",
+      "categorical__climate_zone_Dfb"
+    ],
+    "B": [
+      "numeric__floor_area_m2",
+      "numeric__heated_area_m2",
+      "numeric__year_opened",
+      "numeric__number_of_floors",
+      "numeric__ventilation_system_count",
+      "numeric__ventilation_used_for_heating",
+      "numeric__ventilation_used_for_cooling",
+      "numeric__has_direct_electric_heating",
+      "numeric__has_district_heating",
+      "numeric__has_district_cooling",
+      "numeric__has_heat_pump",
+      "numeric__has_solar_pv",
+      "numeric__hour_sin",
+      "numeric__hour_cos",
+      "numeric__weekday_sin",
+      "numeric__weekday_cos",
+      "numeric__annual_sin",
+      "numeric__annual_cos",
+      "numeric__is_weekend",
+      "numeric__calendar_year",
+      "numeric__temperature_c",
+      "numeric__relative_humidity_pct",
+      "numeric__wind_speed_kmh",
+      "numeric__wind_direction_deg",
+      "numeric__direct_solar_radiation_wm2",
+      "numeric__diffuse_solar_radiation_wm2",
+      "numeric__missingindicator_number_of_floors",
+      "numeric__missingindicator_temperature_c",
+      "numeric__missingindicator_relative_humidity_pct",
+      "numeric__missingindicator_wind_speed_kmh",
+      "numeric__missingindicator_wind_direction_deg",
+      "numeric__missingindicator_direct_solar_radiation_wm2",
+      "numeric__missingindicator_diffuse_solar_radiation_wm2",
+      "categorical__building_use_INSTITUTIONAL (EDUCATION)",
+      "categorical__building_use_PUBLIC BUILDING (KINDERGARTEN)",
+      "categorical__building_use_PUBLIC BUILDING (OFFICE)",
+      "categorical__climate_zone_Cfb",
+      "categorical__climate_zone_Dfb"
+    ]
+  },
+  "calendar_time_zone": "UTC",
+  "categorical_vocabularies": {
+    "A": {
+      "building_use": [
+        "INSTITUTIONAL (EDUCATION)",
+        "PUBLIC BUILDING (KINDERGARTEN)",
+        "PUBLIC BUILDING (OFFICE)"
+      ],
+      "climate_zone": [
+        "Cfb",
+        "Dfb"
+      ]
+    },
+    "B": {
+      "building_use": [
+        "INSTITUTIONAL (EDUCATION)",
+        "PUBLIC BUILDING (KINDERGARTEN)",
+        "PUBLIC BUILDING (OFFICE)"
+      ],
+      "climate_zone": [
+        "Cfb",
+        "Dfb"
+      ]
+    }
+  },
+  "reference_baseline": {
+    "strategy": "training_mean",
+    "predictors": [],
+    "value_kwh_per_m2": 0.3531353607996603
+  },
+  "usage": "Load pipeline with joblib; use build_features(raw, parsed interval_start_utc) from train_models.py before pipeline.predict."
+}

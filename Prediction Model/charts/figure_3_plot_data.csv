@@ -1,0 +1,7 @@
+candidate,model,validation_rmse_kwh_per_m2,max_leaf_nodes,min_samples_leaf
+candidate_1,A,0.3026657829225682,31,30
+candidate_1,B,0.2982529377103225,31,30
+candidate_2,A,0.3020830787353266,15,60
+candidate_2,B,0.2939204220054661,15,60
+candidate_3,A,0.3283577720736382,7,120
+candidate_3,B,0.3112571861971157,7,120

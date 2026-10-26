@@ -1,0 +1,34 @@
+[
+  {
+    "event": "candidate_plan_recorded_before_fitting_or_scoring",
+    "utc": "2026-10-25T09:15:26.018551+00:00"
+  },
+  {
+    "event": "fit_and_validate_candidate_1",
+    "utc": "2026-10-25T09:15:29.451867+00:00"
+  },
+  {
+    "event": "fit_and_validate_candidate_2",
+    "utc": "2026-10-25T09:15:33.763338+00:00"
+  },
+  {
+    "event": "fit_and_validate_candidate_3",
+    "utc": "2026-10-25T09:15:38.108669+00:00"
+  },
+  {
+    "event": "shared_settings_selected_and_saved_before_loading_test_data",
+    "utc": "2026-10-25T09:15:42.744819+00:00"
+  },
+  {
+    "event": "selected_models_and_baselines_refitted_on_all_development_rows",
+    "utc": "2026-10-25T09:15:48.386429+00:00"
+  },
+  {
+    "event": "test_building_data_loaded_after_selection_and_refit",
+    "utc": "2026-10-25T09:15:51.534601+00:00"
+  },
+  {
+    "event": "saved_estimators_predictions_metrics_splits_and_preservation_verified",
+    "utc": "2026-10-25T09:16:01.536494+00:00"
+  }
+]

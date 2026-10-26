@@ -1,0 +1,8 @@
+building_id,role,rows
+L03_B01,excluded,8736
+L07_B01,test,9543
+L14_B01,test,36360
+L14_B02,test,36336
+L14_B03,test,36648
+L14_B04,train,36889
+L14_B05,train,35040

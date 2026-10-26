@@ -1,0 +1,258 @@
+{
+  "status": "validation_guided_followup_on_previously_inspected_tests",
+  "completed_utc": "2026-10-25T09:16:01.537059+00:00",
+  "command": "'/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/.venv/bin/python' -B '/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/run_validation_experiment.py' --threads 4",
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "1.5.3",
+    "scipy": "1.10.0",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.9.4",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "python": "3.11.1"
+  },
+  "development_buildings": [
+    "L03_B01",
+    "L14_B04",
+    "L14_B05"
+  ],
+  "test_buildings": [
+    "L07_B01",
+    "L14_B01",
+    "L14_B02",
+    "L14_B03"
+  ],
+  "split_rule": "Within EACH development building sort unique UTC interval-start timestamps; fit on the first floor(0.8 * unique_count), validate on the remainder. Keep all rows at a timestamp together and preserve original row order. This is future-period validation within known buildings, with per-building cutoffs, not unseen-building validation or a common global time cutoff.",
+  "boundaries": [
+    {
+      "building_id": "L03_B01",
+      "total_rows": 8736,
+      "unique_timestamps": 8736,
+      "fit_unique_timestamps": 6988,
+      "validation_unique_timestamps": 1748,
+      "validation_start_utc": "2022-10-19T15:00:00+00:00",
+      "within_building_timestamp_overlap": 0,
+      "within_building_row_overlap": 0,
+      "fit_rows": 6988,
+      "fit_eligible_rows": 6988,
+      "fit_first_utc": "2022-01-01T11:00:00+00:00",
+      "fit_last_utc": "2022-10-19T14:00:00+00:00",
+      "validation_rows": 1748,
+      "validation_eligible_rows": 1748,
+      "validation_first_utc": "2022-10-19T15:00:00+00:00",
+      "validation_last_utc": "2022-12-31T10:00:00+00:00"
+    },
+    {
+      "building_id": "L14_B04",
+      "total_rows": 36889,
+      "unique_timestamps": 36889,
+      "fit_unique_timestamps": 29511,
+      "validation_unique_timestamps": 7378,
+      "validation_start_utc": "2021-05-14T13:00:00+00:00",
+      "within_building_timestamp_overlap": 0,
+      "within_building_row_overlap": 0,
+      "fit_rows": 29511,
+      "fit_eligible_rows": 29511,
+      "fit_first_utc": "2017-12-31T22:00:00+00:00",
+      "fit_last_utc": "2021-05-14T12:00:00+00:00",
+      "validation_rows": 7378,
+      "validation_eligible_rows": 7378,
+      "validation_first_utc": "2021-05-14T13:00:00+00:00",
+      "validation_last_utc": "2022-03-17T22:00:00+00:00"
+    },
+    {
+      "building_id": "L14_B05",
+      "total_rows": 35040,
+      "unique_timestamps": 35040,
+      "fit_unique_timestamps": 28032,
+      "validation_unique_timestamps": 7008,
+      "validation_start_utc": "2021-03-13T22:00:00+00:00",
+      "within_building_timestamp_overlap": 0,
+      "within_building_row_overlap": 0,
+      "fit_rows": 28032,
+      "fit_eligible_rows": 28032,
+      "fit_first_utc": "2017-12-31T22:00:00+00:00",
+      "fit_last_utc": "2021-03-13T21:00:00+00:00",
+      "validation_rows": 7008,
+      "validation_eligible_rows": 7008,
+      "validation_first_utc": "2021-03-13T22:00:00+00:00",
+      "validation_last_utc": "2021-12-31T21:00:00+00:00"
+    }
+  ],
+  "candidates": {
+    "candidate_1": {
+      "loss": "squared_error",
+      "learning_rate": 0.08,
+      "max_iter": 200,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 30,
+      "l2_regularization": 1.0,
+      "max_bins": 255,
+      "categorical_features": null,
+      "early_stopping": false,
+      "random_state": 42
+    },
+    "candidate_2": {
+      "loss": "squared_error",
+      "learning_rate": 0.08,
+      "max_iter": 200,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 60,
+      "l2_regularization": 1.0,
+      "max_bins": 255,
+      "categorical_features": null,
+      "early_stopping": false,
+      "random_state": 42
+    },
+    "candidate_3": {
+      "loss": "squared_error",
+      "learning_rate": 0.08,
+      "max_iter": 200,
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 120,
+      "l2_regularization": 1.0,
+      "max_bins": 255,
+      "categorical_features": null,
+      "early_stopping": false,
+      "random_state": 42
+    }
+  },
+  "candidate_plan_sha256": "03a743063a3041f41c692b848911ac520a06356ea50e387a191634993262ff28",
+  "selection_rule": "Minimise (equal-weight validation-building RMSE of A + equal-weight validation-building RMSE of B) / 2. Choose one shared configuration. Exact numerical ties: fewer max_leaf_nodes, then larger min_samples_leaf. Only the three predefined candidates; no test performance is consulted.",
+  "selected_candidate": "candidate_2",
+  "selected_settings": {
+    "loss": "squared_error",
+    "learning_rate": 0.08,
+    "max_iter": 200,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 60,
+    "l2_regularization": 1.0,
+    "max_bins": 255,
+    "categorical_features": null,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "predictors": {
+    "A": [
+      "floor_area_m2",
+      "heated_area_m2",
+      "year_opened",
+      "number_of_floors",
+      "ventilation_system_count",
+      "ventilation_used_for_heating",
+      "ventilation_used_for_cooling",
+      "has_direct_electric_heating",
+      "has_district_heating",
+      "has_district_cooling",
+      "has_heat_pump",
+      "has_solar_pv",
+      "hour_sin",
+      "hour_cos",
+      "weekday_sin",
+      "weekday_cos",
+      "annual_sin",
+      "annual_cos",
+      "is_weekend",
+      "calendar_year",
+      "building_use",
+      "climate_zone"
+    ],
+    "B": [
+      "floor_area_m2",
+      "heated_area_m2",
+      "year_opened",
+      "number_of_floors",
+      "ventilation_system_count",
+      "ventilation_used_for_heating",
+      "ventilation_used_for_cooling",
+      "has_direct_electric_heating",
+      "has_district_heating",
+      "has_district_cooling",
+      "has_heat_pump",
+      "has_solar_pv",
+      "hour_sin",
+      "hour_cos",
+      "weekday_sin",
+      "weekday_cos",
+      "annual_sin",
+      "annual_cos",
+      "is_weekend",
+      "calendar_year",
+      "building_use",
+      "climate_zone",
+      "temperature_c",
+      "relative_humidity_pct",
+      "wind_speed_kmh",
+      "wind_direction_deg",
+      "direct_solar_radiation_wm2",
+      "diffuse_solar_radiation_wm2"
+    ]
+  },
+  "source_hashes": {
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L03_B01_model_input.csv": "a4dd59812bc9c8402fc6d592a03b4386ad076016118989f4ce71f34253ea324c",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L03_B01_targets.csv": "98dc92361664e8d57cc02feefece3a1ca2b5cd3328060104bb7b3060b62fb2c7",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L14_B04_model_input.csv": "bbf6ca1c17894b41ec3d2094b80d146122607cb5299bb63952a49ac996bc0806",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L14_B04_targets.csv": "bbe093eb668350143eb7fe6c89ba387e0e50267925b388f4ececd375912d8460",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L14_B05_model_input.csv": "bea95cc183812d242d494bc540fd0f3608c28fbb18924bc285e7b4c70bdea227",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L14_B05_targets.csv": "9833128d22562485a3234be3fff9b71e884429baad9f721cb4e56133bede49ab",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L07_B01_model_input.csv": "3a7c62261ab7a28e3096701994a109fbd19deb82258500ede9b0939c695c1a94",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L07_B01_targets.csv": "19b4bfde8f85b3afe9c0126055f093b17907f765dc6fe5cba2f30ae3d50562bb",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L14_B01_model_input.csv": "c2b299020d717407d13e0eaeeaf562fd30c15ee9a24890a21c7a2411fb024c58",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L14_B01_targets.csv": "91905b55081cba17451b7192b86af3ede9b8aa59a4793ed1eb7aa606c5b12686",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L14_B02_model_input.csv": "e66d154707881244934a2cafc029d05982e94b583e91e27140bf752840058d93",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L14_B02_targets.csv": "2dc484e0feb49290015f21209733b51fa8f6ff2ab6d49b5a470803fff4f2464d",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Input Data/L14_B03_model_input.csv": "8e456f64ff83762fb89df55ad1b6f4439ac845db133e3cd7986e90c86a9273c5",
+    "/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/Target Set/L14_B03_targets.csv": "5a2b568ee315b5c58a92ce417da21078cdd273cd460175b1a9101a3c0507ea74"
+  },
+  "preservation_hashes_file": "preservation_hashes.json",
+  "stage_events": [
+    {
+      "event": "candidate_plan_recorded_before_fitting_or_scoring",
+      "utc": "2026-10-25T09:15:26.018551+00:00"
+    },
+    {
+      "event": "fit_and_validate_candidate_1",
+      "utc": "2026-10-25T09:15:29.451867+00:00"
+    },
+    {
+      "event": "fit_and_validate_candidate_2",
+      "utc": "2026-10-25T09:15:33.763338+00:00"
+    },
+    {
+      "event": "fit_and_validate_candidate_3",
+      "utc": "2026-10-25T09:15:38.108669+00:00"
+    },
+    {
+      "event": "shared_settings_selected_and_saved_before_loading_test_data",
+      "utc": "2026-10-25T09:15:42.744819+00:00"
+    },
+    {
+      "event": "selected_models_and_baselines_refitted_on_all_development_rows",
+      "utc": "2026-10-25T09:15:48.386429+00:00"
+    },
+    {
+      "event": "test_building_data_loaded_after_selection_and_refit",
+      "utc": "2026-10-25T09:15:51.534601+00:00"
+    },
+    {
+      "event": "saved_estimators_predictions_metrics_splits_and_preservation_verified",
+      "utc": "2026-10-25T09:16:01.536494+00:00"
+    }
+  ],
+  "calendar_timezone": "UTC",
+  "weather_alignment": "exact interval_start_utc (original exact-t)",
+  "weather_availability_limitation": "Existing weather is joined by exact interval_start_utc, without shifting. Weather labelled at prediction time is assumed available then. These are historical/reanalysis data; publication latency and aggregation timing are not established. Results are conditional on this availability assumption.",
+  "target_shift_hours": 0,
+  "fit_rows": 64531,
+  "validation_rows": 16134,
+  "development_rows": 80665,
+  "test_rows": 118887,
+  "validation_aggregation": "arithmetic mean of three building metrics separately",
+  "test_aggregation": "per building, pooled per location, arithmetic mean of two location metrics",
+  "final_calendar_fallback_usage": {
+    "weekdayxhour": 45879,
+    "building_usexweekdayxhour": 73008
+  },
+  "preservation_note": "All prior files unchanged at completion; pre-update progress report archived here for subsequent authorised documentation update"
+}

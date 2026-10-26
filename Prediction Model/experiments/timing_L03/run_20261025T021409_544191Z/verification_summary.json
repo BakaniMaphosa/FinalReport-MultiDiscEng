@@ -1,0 +1,15 @@
+{
+  "targeted_unit_tests_passed": 10,
+  "test_command": "PYTHONDONTWRITEBYTECODE=1 \"Prediction Model/.venv/bin/python\" -B -W ignore::DeprecationWarning -m unittest discover -s \"Prediction Model\" -p \"test_followup_experiments.py\"",
+  "experiments_completed": 4,
+  "same_original_test_rows_per_experiment": 118887,
+  "independently_checked_building_and_location_metric_rows": 96,
+  "all_metric_rows_including_location_averages": 112,
+  "baseline_means_and_all_group_counts_reconstructed_from_training_only": true,
+  "weather_requested_timestamps_exact_t_or_t_minus_one_hour": true,
+  "nonweather_predictions_identical_across_timing_variants": true,
+  "original_windows_reused": true,
+  "chart_files": 29,
+  "preserved_original_files": 25,
+  "source_and_original_hashes_match": true
+}

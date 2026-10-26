@@ -1,0 +1,48 @@
+{
+  "selected_utc": "2026-10-25T09:15:42.744194+00:00",
+  "candidate": "candidate_2",
+  "settings": {
+    "loss": "squared_error",
+    "learning_rate": 0.08,
+    "max_iter": 200,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 60,
+    "l2_regularization": 1.0,
+    "max_bins": 255,
+    "categorical_features": null,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "selection_rule": "Minimise (equal-weight validation-building RMSE of A + equal-weight validation-building RMSE of B) / 2. Choose one shared configuration. Exact numerical ties: fewer max_leaf_nodes, then larger min_samples_leaf. Only the three predefined candidates; no test performance is consulted.",
+  "scores": [
+    {
+      "candidate": "candidate_1",
+      "A_validation_macro_rmse": 0.3026657829225682,
+      "B_validation_macro_rmse": 0.2982529377103225,
+      "selection_score": 0.3004593603164454,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 30,
+      "selected": false
+    },
+    {
+      "candidate": "candidate_2",
+      "A_validation_macro_rmse": 0.30208307873532664,
+      "B_validation_macro_rmse": 0.2939204220054661,
+      "selection_score": 0.29800175037039633,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 60,
+      "selected": true
+    },
+    {
+      "candidate": "candidate_3",
+      "A_validation_macro_rmse": 0.3283577720736382,
+      "B_validation_macro_rmse": 0.3112571861971157,
+      "selection_score": 0.31980747913537694,
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 120,
+      "selected": false
+    }
+  ],
+  "test_data_loaded": false,
+  "candidate_plan_sha256": "03a743063a3041f41c692b848911ac520a06356ea50e387a191634993262ff28"
+}

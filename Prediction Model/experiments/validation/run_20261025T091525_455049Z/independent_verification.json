@@ -1,0 +1,18 @@
+{
+  "independent_checks_passed": true,
+  "automated_test_command": "PYTHONDONTWRITEBYTECODE=1 \"Prediction Model/.venv/bin/python\" -B -W ignore::DeprecationWarning -m unittest discover -s \"Prediction Model\" -p 'test_validation_experiment.py'",
+  "automated_tests_passed": 8,
+  "metric_rows_independently_recomputed": 76,
+  "all_seven_staged_input_target_pairs_verified": true,
+  "validation_splits_and_original_row_alignment_verified": true,
+  "selected_settings_reconstructed_from_validation_only": true,
+  "preprocessing_medians_and_vocabularies_verified_for_all_eight_models": true,
+  "same_validation_rows_across_candidates": true,
+  "preserved_files_verified": 223,
+  "candidate_plan_precedes_test_data_loading": true,
+  "charts_visually_inspected": [
+    "validation_candidate_comparison.png",
+    "final_rmse_by_test_location.png"
+  ],
+  "progress_report_note": "Preservation verified before documentation update; archived report retains its prior hash."
+}

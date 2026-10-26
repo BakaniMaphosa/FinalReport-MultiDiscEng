@@ -1,0 +1,1 @@
+'/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/.venv/bin/python' -B '/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/run_followup_experiments.py' --output-root '/Users/bakani/Desktop/E.Consumption_predictionModel/Prediction Model/experiments/timing_L03' --threads 4
