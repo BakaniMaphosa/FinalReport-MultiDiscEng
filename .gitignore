@@ -1,0 +1,8 @@
+# Local operating-system, Python and editor artifacts.
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.idea/
