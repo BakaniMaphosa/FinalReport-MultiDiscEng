@@ -2,6 +2,12 @@
 
 Our ENGG2112 group project investigates predicting next-hour electricity consumption per gross floor area (kWh/m²) for buildings excluded from model fitting, using the ADRENALIN dataset. Model A uses building metadata and calendar features; Model B adds six weather variables. Both use `HistGradientBoostingRegressor`, with training-only preprocessing and comparisons against global-mean and calendar/building-use baselines. We prepared seven building datasets, investigated L03/weather sensitivities, and selected shared model settings using chronological validation within three development buildings before refitting and evaluating four held-out buildings. Neither model beat the global-mean baseline on the equal-weight test-location average; weather had a building-dependent effect. These results do not establish a causal weather effect, and our workflow is not ready for operational use.
 
+## Quick start
+
+1. Create the environment (see *Environment setup*).
+2. Run the unit tests (see *Unit tests and fresh-environment verification*).
+3. The report's final numbers are in `Prediction Model/experiments/validation/run_20261025T091525_455049Z/final/results/metrics.csv`.
+
 ## Repository structure
 
 ```text
@@ -23,9 +29,9 @@ Prediction Model/
   run_followup_experiments.py Four fixed-setting sensitivity experiments and both baselines
   generate_report_figures.py  Six report figures drawn from saved validation-selected results
   test_*.py                   Focused sensitivity and validation unit tests
-progress_so_far.md            Historical progress, detailed file guide, results and limitations
+progress_so_far.md            AI-assisted historical progress log, detailed file guide and results
 ADRENALIN_data_description.pdf Local dataset reference
-CONTRIBUTIONS.md              Team contribution template requiring team confirmation
+CONTRIBUTIONS.md              Team contributions by area and version-control workflow
 ```
 
 ## Environment setup
@@ -55,7 +61,7 @@ The new root `.venv/` keeps the existing `Prediction Model/.venv/` separate. The
 
 ## Pipeline order and verified command reference
 
-The following purposes, inputs, outputs and command-line options were checked by reading the scripts, [the saved validation command](<Prediction Model/experiments/validation/run_20261025T091525_455049Z/command.txt>) and Section 8 of [our progress report](progress_so_far.md). **These are reproduction references, not a batch to execute in the preserved checkout.** No pipeline stage was executed during housekeeping. Preparation writes derived data; training/experiment commands fit models; plotting generates figures. The saved data, experiments, models and charts remain protected. Any later reproduction requires a separately authorised working copy and fresh output destinations.
+The following purposes, inputs, outputs and command-line options were checked by reading the scripts, [the saved validation command](<Prediction Model/experiments/validation/run_20261025T091525_455049Z/command.txt>) and Section 8 of [the progress log](progress_so_far.md). **These are reproduction references, not a batch to execute in the preserved checkout.** Stage 1 deletes files, so any reproduction should be run in a separate copy of the repository. Preparation writes derived data; training/experiment commands fit models; plotting generates figures. Reproduction should use fresh output destinations and preserve saved data and results.
 
 All commands below assume the activated environment and project-root working directory. “Unified tables” means `Data/BuildingsByLocation/L*/unifieddataconsumption/`.
 
@@ -64,10 +70,10 @@ All commands below assume the activated environment and project-root working dir
 | 1. `filter_csv_files.py` | Select explicitly allowed channels by filename | Listed buildings' `1h/` CSVs | **Deletes unmatched CSVs in those folders**; preserves weather, non-CSV files and unlisted buildings |
 | 2. `inspect_energy_readings.py` | Inspect schemas, units, timestamps, gaps and numerical changes | Ten configured channels, including historical L06 entries | Replaces `Data_cleaning/energy_readings_report.txt`; reads source CSVs without changing them |
 | 3. `convert_cumulative_to_hourly.py` | Difference explicitly confirmed cumulative channels | Raw counters and `cumulative_channels.json` | Per-channel `processed/*.hourly_energy.csv`, `*.excluded_intervals.csv`, `*.processing_report.txt`; retains counters |
-| 4. `build_consumption_tables.py` | Build separate interval tables for seven buildings | Selected L03/L14 raw channels; processed L07 hourly differences | Unified `<building>_consumption.csv`; replaces generated outputs |
-| 5. `join_weather_data.py` | Left-join six weather fields by exact UTC interval start | Consumption CSVs and matching location weather | Unified `<building>_consumption_weather.csv`; unmatched weather stays empty |
-| 6. `add_building_metadata.py` | Add fourteen metadata fields and electricity per gross m² | Consumption/weather CSVs and matching `*-building_info.txt` | Unified `<building>_model_input.csv` plus `Data_cleaning/building_metadata_report.txt` |
-| 7. `export_prediction_targets.py` | Export targets without shifting or changing row order | Unified model-input CSVs | Unified `<building>_targets.csv`; retains input files |
+| 4. `build_consumption_tables.py` | Build separate interval tables for seven buildings | Selected L03/L14 raw channels; processed L07 hourly differences | Unified `*_consumption.csv`; replaces generated outputs |
+| 5. `join_weather_data.py` | Left-join six weather fields by exact UTC interval start | Consumption CSVs and matching location weather | Unified `*_consumption_weather.csv`; unmatched weather stays empty |
+| 6. `add_building_metadata.py` | Add fourteen metadata fields and electricity per gross m² | Consumption/weather CSVs and matching `*-building_info.txt` | Unified `*_model_input.csv` plus `Data_cleaning/building_metadata_report.txt` |
+| 7. `export_prediction_targets.py` | Export targets without shifting or changing row order | Unified model-input CSVs | Unified `*_targets.csv`; retains input files |
 | 8. `train_models.py` | Original fixed-setting A/B/global-mean experiment, or alignment checks only | Staged `Input Data/` and `Target Set/` | `results/`, `models/`, `charts/` under `--output-dir`; defaults would replace earlier outputs |
 | 9. `run_validation_experiment.py` | Three predefined candidates, chronological validation, shared selection, full refit and testing | Staged inputs/targets, original manifest and reused feature/baseline definitions | A fresh `experiments/validation/run_*/` with splits, candidates, pipelines, metrics, predictions and charts |
 | 10. `run_followup_experiments.py` | Cross L03 inclusion/exclusion with exact-t/one-hour-lagged weather | Staged inputs/targets, full weather series, original results and saved chart windows | A fresh `experiments/timing_L03/run_*/` with four cases and both baselines |
@@ -94,7 +100,7 @@ python -B Data_cleaning/add_building_metadata.py
 python -B Data_cleaning/export_prediction_targets.py
 ```
 
-These scripts write derived tables under `Data/BuildingsByLocation/`. The active modelling copies are instead under `Prediction Model/Input Data/` and `Prediction Model/Target Set/`. **No script automatically stages those upstream outputs into the modelling folders.** Any authorised future refresh must preserve input/target identities, exact row order and timestamp alignment; this housekeeping task did not copy or regenerate datasets. Targets already correspond to their prediction intervals and must not be shifted again.
+These scripts write derived tables under `Data/BuildingsByLocation/`. The active modelling copies are instead under `Prediction Model/Input Data/` and `Prediction Model/Target Set/`. **No script automatically stages those upstream outputs into the modelling folders.** Any future refresh must preserve input/target identities, exact row order and timestamp alignment. Targets already correspond to their prediction intervals and must not be shifted again.
 
 ### 8: original fixed-setting modelling and read-only checks
 
@@ -118,7 +124,7 @@ The saved `command.txt` uses the original machine's absolute interpreter/script 
 PYTHONDONTWRITEBYTECODE=1 python -B "Prediction Model/run_validation_experiment.py" --threads 4
 ```
 
-Each of L03_B01/L14_B04/L14_B05 uses its own earliest-80% fitting/latest-20% validation cutoff over unique interval-start timestamps. This assesses future periods of known buildings. The three candidate leaf/minimum-leaf settings are 31/30, 15/60 and 7/120, with all other parameters fixed. One shared configuration minimises the mean of A's and B's equal-weight validation-building RMSEs; ties prefer fewer leaves, then larger minimum leaf size. Candidate 2 (15/60) was selected before test data loading. Both models, preprocessing and both baselines were refitted on all development rows before held-out testing. The runner writes into the protected experiments tree, so it is documented here but was not run during housekeeping.
+Each of L03_B01/L14_B04/L14_B05 uses its own earliest-80% fitting/latest-20% validation cutoff over unique interval-start timestamps. This assesses future periods of known buildings. The three candidate leaf/minimum-leaf settings are 31/30, 15/60 and 7/120, with all other parameters fixed. One shared configuration minimises the mean of A's and B's equal-weight validation-building RMSEs; ties prefer fewer leaves, then larger minimum leaf size. Candidate 2 (15/60) was selected before test data loading. Both models, preprocessing and both baselines were refitted on all development rows before held-out testing. Each invocation writes a new timestamped run under `Prediction Model/experiments/validation/`.
 
 ### 10: earlier exploratory sensitivity experiments
 
@@ -126,7 +132,7 @@ Each of L03_B01/L14_B04/L14_B05 uses its own earliest-80% fitting/latest-20% val
 PYTHONDONTWRITEBYTECODE=1 python -B "Prediction Model/run_followup_experiments.py" --output-root "Prediction Model/experiments/timing_L03" --threads 4
 ```
 
-This matches the saved sensitivity command's arguments, expressed relative to the project root. It retains the original settings while varying the training pool and weather timing, and creates a fresh timestamped batch. Its test buildings had already been inspected; its results are exploratory. It was not rerun during housekeeping.
+This matches the saved sensitivity command's arguments, expressed relative to the project root. It retains the original settings while varying the training pool and weather timing, and creates a fresh timestamped batch. Its test buildings had already been inspected; its results are exploratory.
 
 ### 11: report figures from saved predictions
 
@@ -134,7 +140,7 @@ This matches the saved sensitivity command's arguments, expressed relative to th
 PYTHONDONTWRITEBYTECODE=1 python -B "Prediction Model/generate_report_figures.py" --output-dir "Prediction Model/report_figures_rerun"
 ```
 
-The code's default is `Prediction Model/charts/`, which already contains the report figures and is protected. The command above documents the verified fresh-output option; no figures were generated during housekeeping. The plotting script is tied to the saved validation run named below and keeps the original first complete seven-day window per test building.
+The code's default is `Prediction Model/charts/`, which already contains the report figures. The command above uses a fresh output folder, leaving the report figures in place. The plotting script is tied to the saved validation run named below and keeps the original first complete seven-day window per test building.
 
 ## Unit tests and fresh-environment verification
 
@@ -163,7 +169,7 @@ The report's final numerical results come from:
 
 The same run contains final aligned predictions in `final/results/test_predictions.csv`, fitted preprocessing/models in `final/models/`, validation scores in `selection_scores.csv`, and settings in `selected_settings.json`. MAE/RMSE use kWh/m²; nRMSE is `100 × RMSE / observed mean`, with explicit handling of invalid/non-positive denominators. Location metrics pool rows within a location; the overall summary averages the L07 and L14 metrics equally and is not a pooled RMSE.
 
-`Prediction Model/results/` and `Prediction Model/models/` hold the **earlier fixed-setting run**, with **31 leaves / minimum leaf size 30**, rather than the validation-selected **15/60** refit. Their numbers therefore differ. For example, L07 Model A RMSE is **0.1071** in the earlier results versus **0.1097 kWh/m²** in the final report. The latest equal-location RMSEs are **0.294841** for the global-mean baseline, **1.495577** for the calendar/building-use baseline, **1.050304** for A and **1.069989** for B. Both models still lose to the global mean overall. No numerical result was changed during housekeeping.
+`Prediction Model/results/` and `Prediction Model/models/` hold the **earlier fixed-setting run**, with **31 leaves / minimum leaf size 30**, rather than the validation-selected **15/60** refit. Their numbers therefore differ. For example, L07 Model A RMSE is **0.1071** in the earlier results versus **0.1097 kWh/m²** in the final report. The latest equal-location RMSEs are **0.294841** for the global-mean baseline, **1.495577** for the calendar/building-use baseline, **1.050304** for A and **1.069989** for B. Both models still lose to the global mean overall.
 
 The final report figure files are:
 
@@ -190,22 +196,24 @@ Matching SVGs, [captions](<Prediction Model/charts/captions.md>), plotted-data C
 - **Legacy L06 and staging configuration:** early selection/inspection/cumulative configuration retains an old L06 setup absent from the current tree. Upstream generators write under `Data/`, while training uses separately staged `Prediction Model/` inputs/targets; synchronisation is not automatic.
 - **Operational and causal scope:** future-target/persistence benchmarks, independent operational weather feeds, deployment and causal analysis are not established. Negative predictions remain in the saved results without clipping.
 
-Section 7 of [our progress report](progress_so_far.md) provides the fuller discussion. Its file inventory is a historical snapshot and can include artifacts removed during later housekeeping.
+Section 7 of [the progress log](progress_so_far.md) provides the fuller discussion. Its file inventory records the project at the time of writing.
 
 ## Data
 
 Our data source is **ADRENALIN**, [Zenodo DOI 10.5281/zenodo.15012288](https://doi.org/10.5281/zenodo.15012288). `Data/BuildingsByLocation/` contains the selected L03/L07/L14 raw meter channels, location weather CSVs, building metadata/topology text, L07 processed counter differences and unified consumption/weather tables. [Data/Explanation.md](Data/Explanation.md) describes file naming, units and roles, while [ADRENALIN_data_description.pdf](ADRENALIN_data_description.pdf) supplies the local dataset reference.
 
-Retained raw meter/weather readings are treated as read-only; conversion, joins and enrichment create separate derived files. The historical channel selector deletes unwanted CSV files and belongs only on an authorised working copy. No raw data, staged datasets, saved runs, models or figures were modified during this housekeeping task.
-
-## Repository housekeeping boundaries
-
-The root ignore file covers `.DS_Store`, virtual environments, Python caches, notebook checkpoints and editor metadata; the existing modelling-folder ignore entries remain intact. The stray root `test` artifact and the three tracked `.DS_Store` files outside protected folders were removed. **Seventeen tracked `.DS_Store` files remain inside protected folders**, because the explicit no-change rule takes precedence over the request to remove every committed `.DS_Store`. Ignore rules do not untrack files that are already committed. No protected path was changed in the cleanup commit.
+Retained raw meter/weather readings are treated as read-only; conversion, joins and enrichment create separate derived files. The historical channel selector deletes unwanted CSV files and belongs only on an authorised working copy.
 
 ## Team contributions
 
-[CONTRIBUTIONS.md](CONTRIBUTIONS.md) lists Bakani Maphosa, Yash Makija, Jayden Saldanha and Jeet Prabhakar and leaves responsibility assignments for team completion. Git author identities do not establish offline work or individual responsibility.
+[CONTRIBUTIONS.md](CONTRIBUTIONS.md) records who contributed to each area and explains why commits come from a single account.
 
 ## AI tool use
 
-`<TEAM TO COMPLETE: state honestly which AI tools (e.g. Codex) were used, for which tasks, and how outputs were reviewed and verified, per ENGG2112 policy>`
+We used the following AI tools in this project:
+
+- **Codex:** used by Bakani Maphosa and Jeet Prabhakar for coding, research, and writing the README and other Markdown files in the project directory, including `progress_so_far.md`, which is an AI-assisted historical log.
+- **ChatGPT:** used by Yash Makija and Jayden Saldanha to research related work and to formalise the motivation and stakeholder sections of the report.
+- **Claude:** used to review the report against the marking rubric and to check the report's numbers and the repository documentation.
+
+We checked outputs by running the unit tests and by comparing the results in the repository against the numbers in the report. The team directed the work and is responsible for the content of the report and repository.

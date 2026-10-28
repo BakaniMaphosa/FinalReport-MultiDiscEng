@@ -1,17 +1,42 @@
 # Team contributions
 
-Our team members are **Bakani Maphosa**, **Yash Makija**, **Jayden Saldanha** and **Jeet Prabhakar**. The team must complete and review the following record; names are not assigned to tasks from repository activity alone.
+## Team
 
-| Area | Lead | Supporting | Notes |
-| --- | --- | --- | --- |
-| Data sourcing and cleaning | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` |
-| Feature engineering | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` |
-| Modelling | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` |
-| Validation design | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` |
-| Figures | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` |
-| Report writing | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` |
-| Ethics/stakeholder section | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` |
-| Testing | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` |
-| Repository documentation | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` | `<TEAM TO COMPLETE>` |
+| Name            | SID       | Specialisation       | Notes |
+| --------------- | --------- | -------------------- | ----- |
+| Bakani Maphosa  | 550856326 | Software Engineering | |
+| Yash Makija     | 550171425 | Chemical Engineering | |
+| Jayden Saldanha | 550666161 | Chemical Engineering | |
+| Jeet Prabhakar  | 550465597 | Software Engineering | |
 
-**History note:** Git history lists `Bakani` and `BakaniMaphosa` author identities for one named contributor; it does not independently verify account ownership or other team members' work. The table should reflect offline or pair-working contributions where applicable: `<TEAM TO COMPLETE: confirm account identity and record offline/pair-working contributions where applicable>`.
+## Version control workflow
+
+To avoid requiring every member to learn Git, repository commits were made
+from one team machine under a single account (appearing in the history as
+`Bakani` and `BakaniMaphosa`). Source data was gathered in person by Bakani
+Maphosa and Jeet Prabhakar, shared between members as files, and committed from
+Bakani Maphosa's laptop. Commit authorship therefore reflects who pushed the
+work, not who contributed to it. The table below records contributions by area.
+
+## Contribution by area
+
+| Area                                               | Lead                           | Supporting                   | Notes                                                           |
+| -------------------------------------------------- | ------------------------------ | ---------------------------- | --------------------------------------------------------------- |
+| Data sourcing (ADRENALIN)                          | Bakani Maphosa, Jeet Prabhakar |                              | Done in person; files shared between members                    |
+| Data cleaning scripts                              | Bakani Maphosa, Jeet Prabhakar |                              | Done in person; files shared between members                    |
+| ML prediction model design                         | Bakani Maphosa                 | Jeet Prabhakar               |                                                                 |
+| Validation design and experiments                  | Bakani Maphosa                 | Jeet Prabhakar               |                                                                 |
+| Figures                                            | Bakani Maphosa                 |                              |                                                                 |
+| Report: Background & Motivation (Section 1)        | Yash Makija, Jayden Saldanha   |                              |                                                                 |
+| Report: Objectives & Problem Statement (Section 2) | Yash Makija, Jayden Saldanha   |                              |                                                                 |
+| Report: Related Work (Section 3)                   | Yash Makija, Jayden Saldanha   |                              |                                                                 |
+| Report: Methodology (Section 4)                    | Bakani Maphosa                 |                              |                                                                 |
+| Report: Results (Section 5) | Bakani Maphosa, Jeet Prabhakar, Yash Makija, Jayden Saldanha | | Drafted together in person; written up by Jayden Saldanha |
+| Report: Stakeholders / Wider Adoption (Section 6)  | Yash Makija, Jayden Saldanha   |                              |                                                                 |
+| Report: Conclusion and Executive Summary           | Yash Makija, Bakani Maphosa    |                              |                                                                 |
+| Testing                                            | Bakani Maphosa                 |                              |                                                                 |
+| Repository documentation                           | Bakani Maphosa                 |                              |                                                                 |
+
+## AI tool use
+
+See the "AI tool use" section of the README.
